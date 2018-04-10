@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Iana Alekseeva](https://up.htmlacademy.ru/adaptive/14/user/505469).
-* Наставник: `Неизвестно`.
+* Наставник: [Dmitry Bezugly](https://up.htmlacademy.ru/adaptive/14/user/123364).
 
 ---
 
