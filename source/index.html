@@ -8,12 +8,12 @@
 </head>
 <body>
 <header class="page-header">
-  <section class="page-header__title">
+  <div class="page-header__title">
     <a class="page-header__logo">
-      <img class="page-header__logo-image" src="" width="" height="" alt="Приложение Pink">
+      <img class="page-header__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Приложение Pink">
     </a>
     <button class="page-header__toggle"></button>
-  </section>
+  </div>
   <nav class="page-header__nav main-nav">
     <ul class="main-nav__list site-list">
       <li class="site-list__item site-list__item--active">
@@ -34,7 +34,7 @@
 <main class="page-main">
   <h2 class="visually-hidden">Приложение "Пинк"</h2>
   <section class="downloading">
-    <button class="downloading__button">Скачать приложение</button>
+    <button class="button button--download">Скачать приложение</button>
     <ul class="downloading__list">
       <li class="downloading__item downloading__item--apple">
         <a href="#">Apple-logo</a>
@@ -74,7 +74,7 @@
       </li>
     </ul>
     <div class="advantages__image">
-      <img src="http://placehold.it/150x100" alt="">
+      <img src="http://placehold.it/150x100" width="150" height="100" alt="Картинка приветствия">
     </div>
   </section>
   <section class="reviews">
@@ -104,8 +104,34 @@
       </p>
     </div>
   </section>
+  <section class="price slider">
+    <h2 class="visually-hidden">Цены</h2>
+    <table class="">
+      <tr class="price__row">
+        <th class="price__head">
+          <span class="price__stock">Хит</span>
+          Стандарт
+          <span class="price__value">3,99 Usd</span>
+        </th>
+      </tr>
+      <tr  class="price__row">
+        <td class="price__data price__data--checked">Розовый фильтр</td>
+      </tr>
+      <tr  class="price__row">
+        <td class="price__data price__data--checked">Смайлики</td>
+      </tr>
+      <tr  class="price__row">
+        <td class="price__data price__data--not-included">Комментарии</td>
+      </tr>
+    </table>
+    <p class="price__toggles slider__toggles">
+      <button class="slider__toggle" type="button">1</button>
+      <button class="slider__toggle" type="button">2</button>
+      <button class="slider__toggle" type="button">3</button>
+    </p>
+  </section>
   <section class="contacts">
-    <p class="section__text">Остались вопросы?
+    <p class="contacts__text">Остались вопросы?
       Свяжитесь с нами!</p>
     <ul class="contacts__list">
       <li class="contacts__item">
@@ -123,7 +149,7 @@
       </li>
     </ul>
     <div class="map">
-      <img src="http://placehold.it/150x100" alt="Карта с адресом">
+      <img src="http://placehold.it/150x100" width="150" height="100" alt="Карта с адресом">
     </div>
   </section>
 </main>
