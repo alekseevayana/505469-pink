@@ -3,47 +3,46 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700i&amp;subset=cyrillic,cyrillic-ext"
-        rel="stylesheet">
 </head>
 <body>
 <header class="page-header">
   <div class="page-header__title">
     <a class="page-header__logo">
-      <img class="page-header__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Приложение Pink">
+      <img class="page-header__logo-image" src="http://placehold.it/150x100" width="150" height="100"
+           alt="Приложение Pink">
     </a>
-    <button class="page-header__toggle"></button>
+    <a class="page-header__toggle" href="#" aria-label="Закрыть меню">Закрыть меню</a>
   </div>
   <nav class="page-header__nav main-nav">
     <ul class="main-nav__list site-list">
       <li class="site-list__item site-list__item--active">
-        <a href="#">Главная</a>
+        <a>Главная</a>
       </li>
       <li class="site-list__item">
-        <a href="#">Фотографии</a>
+        <a href="./photo.html">Фотографии</a>
       </li>
       <li class="site-list__item">
-        <a href="#">Конкурс</a>
+        <a href="./form.html">Конкурс</a>
       </li>
       <li class="site-list__item">
-        <a href="#">Html academy</a>
+        <a href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
       </li>
     </ul>
   </nav>
 </header>
 <main class="page-main">
-  <h2 class="visually-hidden">Приложение "Пинк"</h2>
+  <h1 class="visually-hidden">Приложение "Пинк"</h1>
   <section class="downloading">
-    <button class="button button--download">Скачать приложение</button>
+    <a class="button button--download" href="#">Скачать приложение</a>
     <ul class="downloading__list">
       <li class="downloading__item downloading__item--apple">
-        <a href="#">Apple-logo</a>
+        <a href="https://itunes.apple.com/">Apple-logo</a>
       </li>
       <li class="downloading__item downloading__item--android">
-        <a href="#">Android-logo</a>
+        <a href="https://play.google.com/">Android-logo</a>
       </li>
       <li class="downloading__item downloading__item--windows">
-        <a href="#">Windows-logo</a>
+        <a href="https://www.microsoft.com/ru-ru/store/appsvnext/windows-phone">Windows-logo</a>
       </li>
     </ul>
     <p class="downloading__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -104,33 +103,38 @@
       </p>
     </div>
   </section>
-  <section class="price slider">
+  <section class="rates slider">
     <h2 class="visually-hidden">Цены</h2>
-    <table class="">
-      <tr class="price__row">
-        <th class="price__head">
+    <table class="price">
+      <thead class="price__row">
+      <tr>
+        <td class="price__head">
           <span class="price__stock">Хит</span>
           Стандарт
           <span class="price__value">3,99 Usd</span>
-        </th>
+        </td>
       </tr>
-      <tr  class="price__row">
+      </thead>
+      <tbody>
+      <tr class="price__row">
         <td class="price__data price__data--checked">Розовый фильтр</td>
       </tr>
-      <tr  class="price__row">
+      <tr class="price__row">
         <td class="price__data price__data--checked">Смайлики</td>
       </tr>
-      <tr  class="price__row">
+      <tr class="price__row">
         <td class="price__data price__data--not-included">Комментарии</td>
       </tr>
+      </tbody>
     </table>
-    <p class="price__toggles slider__toggles">
+    <p class="slider__toggles">
       <button class="slider__toggle" type="button">1</button>
       <button class="slider__toggle" type="button">2</button>
       <button class="slider__toggle" type="button">3</button>
     </p>
   </section>
   <section class="contacts">
+    <h2 class="visually-hidden">Контакты</h2>
     <p class="contacts__text">Остались вопросы?
       Свяжитесь с нами!</p>
     <ul class="contacts__list">

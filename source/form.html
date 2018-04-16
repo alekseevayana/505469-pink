@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <title>Формы</title>
@@ -11,48 +11,48 @@
       <img class="page-header__logo-image" src="http://placehold.it/150x100" width="150" height="100"
            alt="Приложение Pink">
     </a>
-    <button class="page-header__toggle"></button>
+    <a class="page-header__toggle" href="#" aria-label="Закрыть меню">Закрыть меню</a>
   </div>
   <nav class="page-header__nav main-nav">
     <ul class="main-nav__list site-list">
       <li class="site-list__item">
-        <a href="#">Главная</a>
+        <a href="./index.html">Главная</a>
       </li>
       <li class="site-list__item">
-        <a href="#">Фотографии</a>
+        <a href="./photo.html">Фотографии</a>
+      </li>
+      <li class="site-list__item site-list__item--active">
+        <a>Конкурс</a>
       </li>
       <li class="site-list__item">
-        <a href="#">Конкурс</a>
-      </li>
-      <li class="site-list__item">
-        <a href="#">Html academy</a>
+        <a href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
       </li>
     </ul>
   </nav>
 </header>
 <main class="page-main">
-  <section class="title">
+  <div class="title">
     <h1 class="title__text">Конкурс на самое безбашенное путешествие с Пинк</h1>
-  </section>
+  </div>
   <section class="text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную
     карту!
   </section>
-  <form action="https://echo.htmlacademy.ru" class="form">
+  <form action="https://echo.htmlacademy.ru" class="form" method="post">
     <h2 class="visually-hidden">Форма для заполнения</h2>
     <p class="form__group">
-      <label for="member-surname">
+      <label>
         <span class="form__label">Фамилия</span>
         <input type="text" class="form__input" id="member-surname" placeholder="Укажите фамилию *" required>
       </label>
     </p>
     <p class="form__group">
-      <label for="member-name">
+      <label>
         <span class="form__label">Имя</span>
         <input type="text" class="form__input" id="member-name" placeholder="Введите ваше имя *" required>
       </label>
     </p>
     <p class="form__group">
-      <label for="member-patronymic">
+      <label>
         <span class="form__label">Отчество</span>
         <input type="text" class="form__input" id="member-patronymic" placeholder="Ну и отчество тоже">
       </label>
@@ -63,37 +63,37 @@
       </legend>
       <ul class="checkboxes__list">
         <li class="checkboxes__item">
-          <label for="shark-selfie">
+          <label>
             <input type="checkbox" class="checkboxes__input" id="shark-selfie" checked>
             <span class="checkboxes__label">Сделал селфи с акулой</span>
           </label>
         </li>
         <li class="checkboxes__item">
-          <label for="burned">
+          <label>
             <input type="checkbox" class="checkboxes__input" id="burned" checked>
             <span class="checkboxes__label">Обгорел на пляже</span>
           </label>
         </li>
         <li class="checkboxes__item">
-          <label for="chack-norris">
+          <label>
             <input type="checkbox" class="checkboxes__input" id="chack-norris">
             <span class="checkboxes__label">Видел Чака Норриса</span>
           </label>
         </li>
         <li class="checkboxes__item">
-          <label for="souvenirs">
+          <label>
             <input type="checkbox" class="checkboxes__input" id="souvenirs">
             <span class="checkboxes__label">Накупил сувениров</span>
           </label>
         </li>
         <li class="checkboxes__item">
-          <label for="tower">
+          <label>
             <input type="checkbox" class="checkboxes__input" id="tower" checked>
             <span class="checkboxes__label">Удержал башню</span>
           </label>
         </li>
         <li class="checkboxes__item">
-          <label for="corrupt-hotel">
+          <label>
             <input type="checkbox" class="checkboxes__input" id="corrupt-hotel">
             <span class="checkboxes__label">Разгромил отель</span>
           </label>
@@ -101,13 +101,13 @@
       </ul>
     </fieldset>
     <p class="form__group">
-      <label for="member-number">
+      <label>
         <span class="form__label">Номер телефона</span>
         <input type="tel" class="form__input" id="member-number" placeholder="Номер, пожалуйста">
       </label>
     </p>
     <p class="form__group">
-      <label for="member-email">
+      <label>
         <span class="form__label">Адрес почты</span>
         <input type="email" class="form__input" id="member-email" placeholder="Введите почту *" required>
       </label>
@@ -118,27 +118,27 @@
       </legend>
       <ul class="radiobuttons__list">
         <li class="radiobuttons__item">
-          <label for="iOs">
-            <input type="radio" id="iOs" class="radiobuttons__input" checked>
+          <label>
+            <input type="radio" id="iOs" class="radiobuttons__input" name="app" checked>
             <span class="radiobuttons__label">Pink для iOS</span>
           </label>
         </li>
         <li>
-          <label for="Android">
-            <input type="radio" id="Android" class="radiobuttons__input">
+          <label>
+            <input type="radio" id="Android" class="radiobuttons__input" name="app">
             <span class="radiobuttons__label">Pink на Android</span>
           </label>
         </li>
         <li>
-          <label for="Windows">
-            <input type="radio" id="Windows" class="radiobuttons__input">
+          <label>
+            <input type="radio" id="Windows" class="radiobuttons__input" name="app">
             <span class="radiobuttons__label">Windows Phone</span>
           </label>
         </li>
       </ul>
     </fieldset>
     <p class="form__group">
-      <label for="comment">
+      <label>
         <span class="form__label">Опишите свои эмоции</span>
         <textarea name="comment" id="comment" cols="23" rows="8" class="comment">Можно прям в красках, не стесняясь в выражениях
       </textarea>
@@ -183,7 +183,7 @@
     рассмотрим ее и
     оповестим вас.</p>
   <div class="sent__wrapper">
-    <button class="popup__button">ЗАКРЫТЬ ОКНО</button>
+    <button class="popup__button">Закрыть окно</button>
   </div>
 </div>
 </body>
