@@ -8,6 +8,7 @@ var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 
 gulp.task("style", function() {
+  console.log('style builded')
   gulp.src("source/less/style.less")
     .pipe(plumber())
     .pipe(less())
