@@ -7,9 +7,9 @@
 </head>
 <body>
 <header class="page-header">
-  <div class="page-header__title">
+  <div class="page-header__title container">
     <a class="page-header__logo">
-      <img class="page-header__logo-image" src="http://placehold.it/150x100" width="150" height="100"
+      <img class="page-header__logo-image" src="./img/logo-pink-white-mobile.svg" width="75" height="22"
            alt="Приложение Pink">
     </a>
     <a class="page-header__toggle" href="#" aria-label="Закрыть меню">Закрыть меню</a>
@@ -32,11 +32,11 @@
   </nav>
 </header>
 <main class="page-main">
-  <div class="page-main__caption caption">
+  <div class="page-main__caption caption container">
     <h1 class="caption__text">Конкурс на самое безбашенное путешествие с Пинк</h1>
   </div>
-  <div class="slogan">
-    <p class="slogan__text slogan__text--normal">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000
+  <div class="slogan container">
+    <p class="slogan__text slogan__text--normal">Поделитесь своей историей и получите шанс выиграть ценный приз&nbsp;— 1000
       миль на вашу
       бонусную
       карту!</p>
@@ -44,21 +44,21 @@
   <form action="https://echo.htmlacademy.ru" class="form" method="post">
     <h2 class="visually-hidden">Форма для заполнения</h2>
     <div class="form__groups-wrapper">
-      <p class="form__group">
+      <p class="form__group container">
         <label>
           <span class="form__label form__caption">Фамилия</span>
           <input type="text" class="form__input form__input-indents form__text" placeholder="Укажите фамилию *"
                  required>
         </label>
       </p>
-      <p class="form__group">
+      <p class="form__group container">
         <label>
           <span class="form__label form__caption">Имя</span>
           <input type="text" class="form__input form__input-indents form__text" placeholder="Введите ваше имя *"
                  required>
         </label>
       </p>
-      <p class="form__group">
+      <p class="form__group container">
         <label>
           <span class="form__label form__caption">Отчество</span>
           <input type="text" class="form__input form__input-indents form__text" placeholder="Ну и отчество тоже">
@@ -111,13 +111,13 @@
       </fieldset>
     </div>
     <div class="form__groups-wrapper">
-    <p class="form__group">
+    <p class="form__group container">
       <label>
         <span class="form__label form__caption">Номер телефона</span>
         <input type="tel" class="form__input form__input-indents form__text" placeholder="Номер, пожалуйста">
       </label>
     </p>
-    <p class="form__group">
+    <p class="form__group container">
       <label>
         <span class="form__label form__caption">Адрес почты</span>
         <input type="email" class="form__input form__input-indents form__text" placeholder="Введите почту *" required>
@@ -125,7 +125,7 @@
     </p>
     </div>
     <div class="form__radiobuttons form__choose-wrapper">
-      <fieldset class="radiobuttons">
+      <fieldset class="radiobuttons container">
         <legend class="radiobuttons__title form__caption form__secondary-caption">С каким приложением
           путешествовали?
         </legend>
@@ -151,7 +151,7 @@
         </ul>
       </fieldset>
     </div>
-    <p class="form__group form__comment">
+    <p class="form__group form__comment container">
       <label class="comment">
         <span class="form__caption comment__caption">Опишите свои эмоции</span>
         <textarea name="comment" id="comment" cols="38" rows="6" class="form__input-indents form__textarea">Можно прям в красках, не стесняясь в выражениях
@@ -188,14 +188,14 @@
     </a>
   </div>
 </footer>
-<div class="popup error form__popup">
+<div class="popup error form__popup container">
   <h3 class="popup__title theme__title">Что-то пошло не так!</h3>
-  <p class="popup__text error__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить.</p>
+  <p class="popup__text error__text theme__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить.</p>
   <button class="popup__button button button--form">Ок</button>
 </div>
 <div class="popup sent form__popup">
   <h3 class="popup__title theme__title">Ваша заявка отправлена</h3>
-  <p class="popup__text sent__text theme__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее
+  <p class="popup__text popup__text--sent theme__text container">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее
     время мы
     рассмотрим ее и
     оповестим вас.</p>
