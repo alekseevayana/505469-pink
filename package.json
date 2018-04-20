@@ -7,7 +7,7 @@
     "autoprefixer": "8.3.x",
     "browser-sync": "2.23.x",
     "gulp": "3.9.x",
-    "gulp-less": "4.0.x",
+    "gulp-less": "3.5.0",
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "7.0.x",
     "@htmlacademy/editorconfig-cli": "1.x",
@@ -36,5 +36,9 @@
   ],
   "engines": {
     "node": "8.11"
+  },
+  "dependencies": {
+    "gulp-wait": "0.0.2",
+    "normalize.css": "^8.0.0"
   }
 }
