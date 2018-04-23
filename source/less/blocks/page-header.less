@@ -16,7 +16,30 @@
   padding-top: 22px;
   padding-bottom: 23px;
   border-bottom: 1px solid black;
+}
+
+.page-header__container {
   display: flex;
   justify-content: space-between;
 }
 
+@media (min-width: @desktop-size) {
+  .page-header__toggle {
+    display: none;
+  }
+
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+
+  .page-header__title {
+    border: none;
+  }
+
+  .page-header__title .container {
+    padding: 0;
+  }
+}

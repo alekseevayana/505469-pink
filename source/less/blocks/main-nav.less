@@ -5,7 +5,7 @@
 
 .main-nav__link {
   color: #ffffff;
-  display: inline-block;
+  display: block;
   padding-top: 23px;
   padding-bottom: 23px;
 }
@@ -13,4 +13,19 @@
 .main-nav__item {
   border-top: 1px solid #485461;
   border-bottom: 1px solid black;
+}
+
+@media (min-width: @desktop-size) {
+  .main-nav__item {
+    border: none;
+    margin-right: 79px;
+  }
+
+  .main-nav__item:last-child {
+    margin-right: 0;
+  }
+
+  .main-nav__list {
+    display: flex;
+  }
 }

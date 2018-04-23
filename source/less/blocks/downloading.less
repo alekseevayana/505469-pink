@@ -1,5 +1,4 @@
 .downloading {
-  background-color: #1d2631;
   color: white;
   text-align: center;
   padding-top: 28px;
@@ -14,4 +13,20 @@
   margin-bottom: 30px;
 }
 
+.downloading__slogan {
+  display: none;
+}
+
+
+@media (min-width: @tablet-size) {
+  .downloading__slogan {
+    display: block;
+    font-size: 40px;
+    font-weight: lighter;
+  }
+
+  .downloading {
+    width: 330px;
+  }
+}
 
