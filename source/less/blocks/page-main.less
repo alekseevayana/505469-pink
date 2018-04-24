@@ -1,0 +1,27 @@
+.page-main__header {
+  background-color: #283645;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 396px;
+  background-position: top center;
+  background-color: #1d2631;
+}
+
+@media (min-width: @tablet-size) {
+  .page-main__container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .page-main__header {
+    background-size: 100% 618px;
+    background-position: 40% center;
+  }
+
+  .page-main__photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

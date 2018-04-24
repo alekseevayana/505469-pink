@@ -2,12 +2,9 @@
   background-color: #f2f2f2;
   text-align: center;
   padding-top: 54px;
-  padding-right: 20px;
-  padding-left: 20px;
 }
 
 .advantages__title {
-  margin: 0;
   margin-bottom: 20px;
 }
 
@@ -16,5 +13,42 @@
   color: @base-color;
   margin: 0 auto;
   margin-bottom: 40px;
+}
+
+.advantages__item {
+  text-align: center;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-size) {
+  .advantages__container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .advantages__list {
+    width: 310px;
+    box-sizing: border-box;
+  }
+
+  .advantages__item {
+    text-align: left;
+  }
+}
+
+@media (min-width: @desktop-size) {
+  .advantages__list {
+    display: flex;
+    justify-content: space-between;
+    width: 940px;
+  }
+
+  .advantages__item {
+    text-align: center;
+  }
+
+  .advantages__image--none {
+    display: none;
+  }
 }
 

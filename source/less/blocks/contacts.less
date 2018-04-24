@@ -1,7 +1,5 @@
 .contacts {
   text-align: center;
-  padding-right: 20px;
-  padding-left: 20px;
 }
 
 .contacts__text {
@@ -27,5 +25,24 @@
 .contacts__data {
   color: @base-pink;
   margin: 0;
+}
+
+@media (min-width: @tablet-size) {
+  .contacts__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .contacts__item {
+    width: 310px;
+  }
+}
+
+@media (min-width: @desktop-size) {
+  .contacts__item:nth-last-child(2) {
+    order: 1;
+  }
 }
 

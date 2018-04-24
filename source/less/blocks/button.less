@@ -9,7 +9,8 @@
   border-radius: 25px;
   padding-top: 17px;
   padding-bottom: 17px;
-  width: 280px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .button--download {
@@ -34,4 +35,10 @@
   border-color: #2aab6d;
   line-height: 30px;
   border-radius: 5px;
+}
+
+@media (min-width: @tablet-size) {
+  .button--form {
+    width: 300px;
+  }
 }

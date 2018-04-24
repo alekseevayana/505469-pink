@@ -4,10 +4,28 @@
   padding-bottom: 40px;
 }
 
+.page-footer__container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .page-footer__logo {
   margin-bottom: 40px;
 }
 
 .page-footer__social {
   margin-bottom: 39px;
+}
+
+.page-footer--inner {
+  display: none;
+}
+
+@media (min-width: @tablet-size) {
+  .page-footer--inner {
+    display: block;
+  }
 }

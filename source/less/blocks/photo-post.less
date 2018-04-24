@@ -1,12 +1,11 @@
 .photo-post {
   font-size: 14px;
   color: @base-color;
-  background-color: @base-gray;
   margin-bottom: 20px;
 }
 
 .photo-post__picture {
-  margin-bottom: 25px;
+
 }
 
 .photo-post__author {
@@ -25,7 +24,10 @@
 }
 
 .photo-post__wrapper {
+  padding-top: 25px;
   padding-left: 18px;
+  background-color: @base-gray;
+  box-sizing: border-box;
 }
 
 .photo-post__footer {
@@ -35,3 +37,29 @@
   line-height: 24px;
   margin: 0;
 }
+
+@media (min-width: @tablet-size) {
+  .photo-post {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .photo-post--panorama {
+    width: auto;
+  }
+
+  .photo-post__wrapper {
+    min-height: 155px;
+  }
+}
+
+@media (min-width: @desktop-size) {
+  .photo-post__wrapper--panorama {
+    min-width: 940px;
+  }
+}
+
+
+
+
