@@ -1,6 +1,8 @@
 .reviews {
   text-align: center;
   padding-top: 50px;
+  font-size: 14px;
+  line-height: 30px;
 }
 
 .reviews__item {
@@ -22,13 +24,24 @@
 .reviews__text {
   margin: 0;
   margin-bottom: 35px;
-  font-size: 14px;
-  line-height: 30px;
 }
 
 @media (min-width: @tablet-size) {
+  .reviews {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
   .reviews__author-character {
     display: block;
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  .reviews__author-name {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 38px;
   }
 
   .reviews__item {

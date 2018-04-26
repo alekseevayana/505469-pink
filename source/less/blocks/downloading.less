@@ -1,12 +1,29 @@
 .downloading {
   color: white;
   text-align: center;
+  font-size: 14px;
+  line-height: 24px;
   padding-top: 28px;
   padding-bottom: 35px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.downloading__list {
+  width: 206px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 28px;
 }
 
 .downloading__link {
   color: white;
+  width: 46.21px;
+  height: 56.753px;
 }
 
 .downloading__button {
@@ -17,12 +34,19 @@
   display: none;
 }
 
+.downloading__description {
+  width: 230px;
+  margin: 0 auto;
+}
+
 
 @media (min-width: @tablet-size) {
   .downloading__slogan {
     display: block;
     font-size: 40px;
+    line-height: 50px;
     font-weight: lighter;
+    padding: 0 10px;
   }
 
   .downloading {

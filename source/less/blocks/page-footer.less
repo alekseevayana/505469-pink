@@ -10,14 +10,11 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  min-height: 215px;
 }
 
 .page-footer__logo {
   margin-bottom: 40px;
-}
-
-.page-footer__social {
-  margin-bottom: 39px;
 }
 
 .page-footer--inner {
@@ -27,5 +24,14 @@
 @media (min-width: @tablet-size) {
   .page-footer--inner {
     display: block;
+  }
+
+  .page-footer__container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .page-footer {
+    padding: 0;
   }
 }

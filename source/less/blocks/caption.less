@@ -1,9 +1,23 @@
 .caption {
-  height: 396px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center -107px;
   text-align: center;
   color: white;
+  padding-top: 35px;
+  padding-bottom: 50px;
+}
+
+.caption--index-page {
+  height: 396px;
+  min-width: 320px;
   font-weight: lighter;
   margin: 0;
+  background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto auto, 100% auto;
+  background-position: center bottom, center bottom;
 
 }
 
@@ -15,9 +29,10 @@
 }
 
 @media (min-width: @tablet-size) {
-  .caption {
+  .caption--index-page {
     width: 330px;
     box-sizing: border-box;
     margin: 0 auto;
+    background-image: none;
   }
 }

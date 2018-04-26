@@ -1,10 +1,10 @@
 .advantages {
   background-color: #f2f2f2;
   text-align: center;
-  padding-top: 54px;
 }
 
 .advantages__title {
+  margin-top: 0;
   margin-bottom: 20px;
 }
 
@@ -20,7 +20,18 @@
   margin: 0 auto;
 }
 
+.advantages__image {
+  margin: 0 auto;
+  background-image: url("../img/iphone-screen-mobile@1x.png");
+  width: 158px;
+  height: 277px;
+}
+
 @media (min-width: @tablet-size) {
+  .advantages {
+    font-size: 14px;
+  }
+
   .advantages__container {
     display: flex;
     flex-direction: row-reverse;
@@ -29,6 +40,7 @@
   .advantages__list {
     width: 310px;
     box-sizing: border-box;
+    margin-bottom: 0;
   }
 
   .advantages__item {
