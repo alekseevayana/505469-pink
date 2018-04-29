@@ -10,27 +10,41 @@
 
 .page-footer__container {
   min-height: 215px;
+
+  @media (min-width: @tablet-size) {
+    display: flex;
+    flex-direction: row;
+    padding-top: 52px;
+    padding-bottom: 52px;
+    justify-content: space-between;
+  }
 }
 
 .page-footer__logo {
   margin-bottom: 37px;
-}
 
+  @media (min-width: @tablet-size) {
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  svg {
+    margin-top: -20px;
+  }
+}
 
 .page-footer__social {
   margin-bottom: 40px;
+
+  @media (min-width: @tablet-size) {
+    margin: 0;
+  }
 }
 
 @media (min-width: @tablet-size) {
   .page-footer--inner {
     display: block;
-  }
-
-  .page-footer__container {
-    display: flex;
-    flex-direction: row;
-    padding-top: 52px;
-    padding-bottom: 52px;
   }
 
   .page-footer {
