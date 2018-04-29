@@ -18,15 +18,16 @@
   padding-top: 22px;
   padding-bottom: 16px;
   border-bottom: 1px solid black;
+
+  @media (min-width: @tablet-size) {
+    padding-bottom: 34px;
+    padding-top: 40px;
+  }
 }
 
 .page-header__container {
   display: flex;
   justify-content: space-between;
-}
-
-@media (min-width: @tablet-size) {
-  padding-bottom: 33px;
 }
 
 @media (min-width: @desktop-size) {
