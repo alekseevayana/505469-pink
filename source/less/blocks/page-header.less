@@ -16,13 +16,17 @@
 
 .page-header__title {
   padding-top: 22px;
-  padding-bottom: 23px;
+  padding-bottom: 16px;
   border-bottom: 1px solid black;
 }
 
 .page-header__container {
   display: flex;
   justify-content: space-between;
+}
+
+@media (min-width: @tablet-size) {
+  padding-bottom: 33px;
 }
 
 @media (min-width: @desktop-size) {

@@ -2,11 +2,11 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
-  background-position: center -107px;
+  background-position: center -86px;
   text-align: center;
   color: white;
-  padding-top: 35px;
-  padding-bottom: 50px;
+  padding-top: 28px;
+  padding-bottom: 52px;
 }
 
 .caption--index-page {
@@ -24,15 +24,28 @@
 .caption__text {
   font-weight: lighter;
   font-size: 24px;
+  line-height: 30px;
   margin: 0 auto;
   width: 230px;
 }
 
 @media (min-width: @tablet-size) {
+  .caption {
+    padding-top: 70px;
+    padding-bottom: 80px;
+    background-position: center -179px;
+  }
+
   .caption--index-page {
     width: 330px;
     box-sizing: border-box;
     margin: 0 auto;
     background-image: none;
+  }
+
+  .caption__text {
+    font-size: 50px;
+    line-height: 60px;
+    width: 480px;
   }
 }

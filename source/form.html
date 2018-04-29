@@ -2,7 +2,8 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Формы</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -53,6 +54,7 @@
       миль на вашу
       бонусную
       карту!</p>
+    <p class="slogan__form-text">Пожалуйста, заполните форму ниже:</p>
   </div>
   <form action="https://echo.htmlacademy.ru" class="form" method="post">
     <h2 class="visually-hidden">Форма для заполнения</h2>
@@ -80,44 +82,44 @@
     </fieldset>
     <div class="form__choose-wrapper">
       <fieldset class="form__fieldset checkboxes">
-        <legend class="checkboxes__name form__caption">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ваши
+        <legend class="checkboxes__name form__caption">Ваши
           безбашенные
-          достижения в путешествии&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          достижения в путешествии
         </legend>
         <ul class="checkboxes__list list">
           <li class="checkboxes__item">
             <label>
-              <input type="checkbox" class="checkboxes__input" id="shark-selfie" checked>
+              <input type="checkbox" class="checkboxes__input visually-hidden" id="shark-selfie" checked>
               <span class="checkboxes__label form__text">Сделал селфи с акулой</span>
             </label>
           </li>
           <li class="checkboxes__item">
             <label>
-              <input type="checkbox" class="checkboxes__input" id="burned" checked>
+              <input type="checkbox" class="checkboxes__input visually-hidden" id="burned" checked>
               <span class="checkboxes__label form__text">Обгорел на пляже</span>
             </label>
           </li>
           <li class="checkboxes__item">
             <label>
-              <input type="checkbox" class="checkboxes__input" id="chack-norris">
+              <input type="checkbox" class="checkboxes__input visually-hidden" id="chack-norris">
               <span class="checkboxes__label form__text">Видел Чака Норриса</span>
             </label>
           </li>
           <li class="checkboxes__item">
             <label>
-              <input type="checkbox" class="checkboxes__input" id="souvenirs">
+              <input type="checkbox" class="checkboxes__input visually-hidden" id="souvenirs">
               <span class="checkboxes__label form__text">Накупил сувениров</span>
             </label>
           </li>
           <li class="checkboxes__item">
             <label>
-              <input type="checkbox" class="checkboxes__input" id="tower" checked>
+              <input type="checkbox" class="checkboxes__input visually-hidden" id="tower" checked>
               <span class="checkboxes__label form__text">Удержал башню</span>
             </label>
           </li>
           <li class="checkboxes__item">
             <label>
-              <input type="checkbox" class="checkboxes__input" id="corrupt-hotel">
+              <input type="checkbox" class="checkboxes__input visually-hidden" id="corrupt-hotel">
               <span class="checkboxes__label form__text">Разгромил отель</span>
             </label>
           </li>
@@ -129,11 +131,13 @@
       <p class="form__contacts-group">
         <label class="form__contacts-label">
           <span class="form__label form__caption">Номер телефона</span>
-          <input type="tel" class="form__input form__input-indents form__text" placeholder="Номер, пожалуйста">
+          <input type="tel" class="form__input form__input-indents form__text form__contacts-input"
+                 placeholder="Номер, пожалуйста">
         </label>
         <label class="form__contacts-label">
           <span class="form__label form__caption">Адрес почты</span>
-          <input type="email" class="form__input form__input-indents form__text" placeholder="Введите почту *" required>
+          <input type="email" class="form__input form__input-indents form__text form__contacts-input"
+                 placeholder="Введите почту *" required>
         </label>
       </p>
     </fieldset>
@@ -145,19 +149,19 @@
         <ul class="radiobuttons__list list">
           <li class="radiobuttons__item">
             <label>
-              <input type="radio" id="iOs" class="radiobuttons__input" name="app" checked>
+              <input type="radio" id="iOs" class="radiobuttons__input visually-hidden" name="app" checked>
               <span class="radiobuttons__label form__text">Pink для iOS</span>
             </label>
           </li>
-          <li>
+          <li class="radiobuttons__item">
             <label>
-              <input type="radio" id="Android" class="radiobuttons__input" name="app">
+              <input type="radio" id="Android" class="radiobuttons__input visually-hidden" name="app">
               <span class="radiobuttons__label form__text">Pink на Android</span>
             </label>
           </li>
-          <li>
+          <li class="radiobuttons__item">
             <label>
-              <input type="radio" id="Windows" class="radiobuttons__input" name="app">
+              <input type="radio" id="Windows" class="radiobuttons__input visually-hidden" name="app">
               <span class="radiobuttons__label form__text">Windows Phone</span>
             </label>
           </li>
@@ -166,14 +170,12 @@
     </div>
     <fieldset class="form__fieldset form__fieldset--textarea">
       <legend class="form__caption form__caption--textarea">Опишите свои эмоции</legend>
-      <textarea name="comment" id="comment" cols="38" rows="6" class="form__input-indents form__textarea">Можно прям в красках, не стесняясь в выражениях
+      <textarea name="comment" id="comment" cols="38" rows="5" class="form__input-indents form__textarea">Можно прям в красках, не стесняясь в выражениях
       </textarea>
       </label>
     </fieldset>
-    <div class="form__button">
-      <p class="">
-        <button type="submit" class="button button--form">Отправить форму</button>
-      </p>
+    <div class="form__footer">
+      <button type="submit" class="button button--form form__button">Отправить форму</button>
       <p class="form__note">
         <sup>*</sup> — Обязательные поля
       </p>
@@ -182,7 +184,8 @@
 </main>
 <footer class="page-footer">
   <div class="page-footer__container container">
-    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
+    <div class="page-footer__logo">
+      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
   <g>
     <path fill="#283645" d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.063 c0,4.86-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.287-1.289,1.287c-0.676,0-1.256-0.58-1.256-1.287L71.874,18.661 L71.874,18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57V29.641 z"/>
     <path fill="#283645" d="M93.603,18.5c0-0.708,0.579-1.288,1.255-1.288c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.287-1.288,1.287c-0.676,0-1.255-0.579-1.255-1.287V18.5z"/>
@@ -192,6 +195,7 @@
   <path fill="#FFFFFF" d="M60.498,28.266"/>
   <path fill="#D22856" d="M60.462,28.016c-0.002-0.009-5.175-21.365-5.175-21.365C54.926,4.303,52.694,0,46.688,0 c-0.829,0-1.5,0.671-1.5,1.5s0.671,1.5,1.5,1.5c4.856,0,5.575,3.729,5.639,4.143l4.767,19.701h-2.073 c-0.742-5.927-5.802-10.531-11.927-10.531s-11.186,4.604-11.927,10.531h-1.82c-0.741-5.927-5.802-10.531-11.927-10.531 S6.235,20.917,5.493,26.844H3.42L8.187,7.143C8.25,6.729,8.97,3,13.826,3c0.829,0,1.5-0.671,1.5-1.5S14.655,0,13.826,0 C7.82,0,5.588,4.303,5.227,6.651c0,0-5.173,21.356-5.175,21.365c-0.266,1.109,0.531,1.826,1.426,1.826 c0.012,0,0.023,0.004,0.036,0.004h3.982c0.741,5.926,5.802,10.53,11.927,10.53s11.185-4.604,11.927-10.53h1.814 c0.742,5.926,5.802,10.53,11.927,10.53s11.186-4.604,11.927-10.53H59c0.012,0,0.023-0.004,0.036-0.004 C59.931,29.842,60.728,29.125,60.462,28.016z M26.315,29.844c-0.715,4.272-4.421,7.531-8.896,7.531s-8.18-3.259-8.896-7.531 c-0.082-0.488-0.135-0.988-0.135-1.5s0.053-1.011,0.135-1.5c0.715-4.271,4.421-7.531,8.896-7.531s8.18,3.26,8.896,7.531 c0.082,0.489,0.135,0.988,0.135,1.5S26.397,29.355,26.315,29.844z M51.99,29.844c-0.716,4.272-4.421,7.531-8.896,7.531 c-4.475,0-8.181-3.259-8.896-7.531c-0.082-0.488-0.135-0.988-0.135-1.5s0.053-1.011,0.135-1.5c0.716-4.271,4.421-7.531,8.896-7.531 c4.475,0,8.181,3.26,8.896,7.531c0.082,0.489,0.135,0.988,0.135,1.5S52.072,29.355,51.99,29.844z"/>
 </svg>
+    </div>
     <div class="page-footer__social social">
       <ul class="social__list list">
         <li class="social__item">
@@ -231,20 +235,22 @@
     </div>
   </div>
 </footer>
-<div class="popup error form__popup">
+<div class="popup form__popup popup--error">
   <h3 class="popup__title theme__title">Что-то пошло не так!</h3>
   <p class="popup__text error__text theme__text">Проверьте поля, выделенные красным, скорее всего вы забыли их
     заполнить.</p>
   <button class="popup__button button button--form">Ок</button>
 </div>
-<div class="popup sent form__popup">
-  <h3 class="popup__title theme__title">Ваша заявка отправлена</h3>
-  <p class="popup__text popup__text--sent theme__text">Спасибо за ваше участие, ваша заявка уже поступила к
-    нам. В ближайшее
-    время мы
-    рассмотрим ее и
-    оповестим вас.</p>
-  <div class="sent__wrapper">
+<div class="popup form__popup popup--sent">
+  <div class="popup__wrapper-text">
+    <h3 class="popup__title theme__title">Ваша заявка отправлена</h3>
+    <p class="popup__text popup__text--sent theme__text">Спасибо за ваше участие, ваша заявка уже поступила к
+      нам. В ближайшее
+      время мы
+      рассмотрим ее и
+      оповестим вас.</p>
+  </div>
+  <div class="popup__wrapper-btn">
     <button class="popup__button button button--form">Закрыть окно</button>
   </div>
 </div>

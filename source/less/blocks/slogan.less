@@ -4,6 +4,7 @@
   line-height: 30px;
   color: @base-color;
   padding-top: 46px;
+  margin-bottom: 39px;
 }
 
 .slogan__text {
@@ -14,7 +15,7 @@
   font-weight: lighter;
 }
 
-.slogan__text:first-child {
+.slogan__text-first {
   margin-bottom: 35px;
 }
 
@@ -24,21 +25,36 @@
   font-weight: normal;
 }
 
+.slogan__form-text {
+  display: none;
+}
+
 @media (min-width: @tablet-size) {
+  .slogan {
+    padding-top: 92px;
+    margin-bottom: 72px;
+  }
+
   .slogan__text {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 18px;
+    line-height: 30px;
+    width: 495px;
+    margin: 0 auto;
   }
 
   .slogan__text:first-child {
     margin-bottom: 0;
   }
+
+  .slogan__form-text {
+    display: block;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
 @media (min-width: @desktop-size) {
-  .slogan__text {
-    font-size: 50px;
-    line-height: 60px;
-  }
+
 
 }

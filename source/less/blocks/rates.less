@@ -1,12 +1,73 @@
 .rates {
   background-color: @base-gray;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 44px;
 }
 
 .rates__table {
   border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 40px;
 }
 
-tbody td {
+.rates td:not(.rates__first-column) {
+  padding-top: 20px;
+  padding-bottom: 16px;
+  width: 25%;
+  text-align: center;
+}
+
+.rates__first-column {
+  padding-left: 16px;
+  text-align: left;
+}
+
+.rates__head-item {
+  background-color: @base-color;
+  color: white;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: bold;
+  position: relative;
+}
+
+.rates__head-item:nth-child(2),
+.rates__head-item:nth-child(3) {
+  border-right: 2px solid white;
+}
+
+.rates__head-item svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.rates__head-item .rates__stock {
+  position: absolute;
+  font-size: 14px;
+  transform: rotate(315deg);
+  top: 2px;
+  left: 6px;
+}
+
+.rates__value {
+  margin: 0;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.rates__data-yes path {
+  fill: #3dc644;
+}
+
+.rates__data-no {
+  fill: #f25b26;
+}
+
+.rates__table-body td {
   border: 2px solid @darker-gray;
   background-color: white;
+  color: @base-color;
 }
+
