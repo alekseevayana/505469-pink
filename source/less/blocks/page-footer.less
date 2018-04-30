@@ -4,7 +4,7 @@
   padding-bottom: 40px;
 }
 
-.page-footer--inner {
+.page-footer--invisible {
   display: none;
 }
 
@@ -14,9 +14,13 @@
   @media (min-width: @tablet-size) {
     display: flex;
     flex-direction: row;
-    padding-top: 52px;
+    padding-top: 63px;
     padding-bottom: 52px;
     justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-size) {
+    padding-top: 30px;
   }
 }
 
@@ -43,7 +47,7 @@
 }
 
 @media (min-width: @tablet-size) {
-  .page-footer--inner {
+  .page-footer--invisible {
     display: block;
   }
 

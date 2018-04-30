@@ -1,6 +1,17 @@
 .radiobuttons__title {
   width: 220px;
   margin-bottom: 39px;
+
+  @media (min-width: @tablet-size) {
+    width: auto;
+    padding-right: 31px;
+    padding-left: 31px;
+    margin-bottom: 49px;
+  }
+
+  @media (min-width: @desktop-size) {
+    white-space: nowrap;
+  }
 }
 
 .radiobuttons__list {
@@ -10,10 +21,18 @@
 .radiobuttons__item {
   padding-left: 73px;
   margin-bottom: 45px;
-}
 
-.radiobuttons__item:last-child {
-  margin-bottom: 0;
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @tablet-size) {
+    padding-left: 57px;
+  }
+
+  @media (min-width: @desktop-size) {
+    padding-left: 79px;
+  }
 }
 
 .radiobuttons__item label {
@@ -32,6 +51,10 @@
   height: 34px;
   border: 2px solid @darker-gray;
   border-radius: 100%;
+
+  @media (min-width: @tablet-size) {
+    left: -58px;
+  }
 }
 
 .radiobuttons__input:checked + span::after {
@@ -43,31 +66,8 @@
   height: 16px;
   background-color: @base-pink;
   border-radius: 100%;
-}
 
-@media (min-width: 660px) {
-  .radiobuttons__title {
-    width: auto;
-    padding-right: 31px;
-    padding-left: 31px;
-    margin-bottom: 49px;
-  }
-
-  .radiobuttons__item {
-    padding-left: 57px;
-  }
-
-  .radiobuttons__input + span::before {
-    left: -58px;
-  }
-
-  .radiobuttons__input:checked + span::after {
+  @media (min-width: @tablet-size) {
     left: -47px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .radiobuttons__title {
-    white-space: nowrap;
   }
 }

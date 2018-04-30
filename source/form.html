@@ -36,7 +36,7 @@
           <a class="main-nav__link list__link">Конкурс</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link list__link" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
+          <a class="main-nav__link list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a>
         </li>
       </ul>
     </nav>
@@ -53,8 +53,7 @@
       1000
       миль на вашу
       бонусную
-      карту!</p>
-    <p class="slogan__form-text">Пожалуйста, заполните форму ниже:</p>
+      карту! <span class="slogan__form-text">Пожалуйста, заполните форму ниже:</span></p>
   </div>
   <form action="https://echo.htmlacademy.ru" class="form" method="post">
     <h2 class="visually-hidden">Форма для заполнения</h2>
@@ -135,7 +134,7 @@
                  placeholder="Номер, пожалуйста">
         </label>
         <label class="form__contacts-label">
-          <span class="form__label form__caption">Адрес почты</span>
+          <span class="form__label form__caption form__label--contacts">Адрес почты</span>
           <input type="email" class="form__input form__input-indents form__text form__contacts-input"
                  placeholder="Введите почту *" required>
         </label>
@@ -170,14 +169,14 @@
     </div>
     <fieldset class="form__fieldset form__fieldset--textarea">
       <legend class="form__caption form__caption--textarea">Опишите свои эмоции</legend>
-      <textarea name="comment" id="comment" cols="38" rows="5" class="form__input-indents form__textarea">Можно прям в красках, не стесняясь в выражениях
+      <textarea name="comment" id="comment" cols="38" rows="3" class="form__input-indents form__textarea">Можно прям в красках, не стесняясь в выражениях
       </textarea>
       </label>
     </fieldset>
     <div class="form__footer">
       <button type="submit" class="button button--form form__button">Отправить форму</button>
       <p class="form__note">
-        <sup>*</sup> — Обязательные поля
+        <sup>*</sup> — Обязательные <span class="form__note-long">для заполнения</span> поля
       </p>
     </div>
   </form>

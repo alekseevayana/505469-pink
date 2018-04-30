@@ -5,10 +5,22 @@
   color: @base-color;
   padding-top: 46px;
   margin-bottom: 39px;
+
+  @media (min-width: @tablet-size) {
+    padding-top: 92px;
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: @desktop-size) {
+    margin-bottom: 68px;
+  }
+
 }
 
-.slogan__text {
-  margin: 0;
+.slogan__text--normal {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: normal;
 }
 
 .slogan__text--light {
@@ -19,42 +31,38 @@
   margin-bottom: 35px;
 }
 
-.slogan__text--normal {
-  font-size: 14px;
-  line-height: 30px;
-  font-weight: normal;
-}
+.slogan__text {
+  margin: 0;
 
-.slogan__form-text {
-  display: none;
-}
-
-@media (min-width: @tablet-size) {
-  .slogan {
-    padding-top: 92px;
-    margin-bottom: 72px;
-  }
-
-  .slogan__text {
+  @media (min-width: @tablet-size) {
     font-size: 18px;
     line-height: 30px;
     width: 495px;
     margin: 0 auto;
+
+    &:first-child {
+      margin-bottom: 0;
+    }
   }
 
-  .slogan__text:first-child {
-    margin-bottom: 0;
+  @media (min-width: @desktop-size) {
+    width: 778px;
   }
+}
 
-  .slogan__form-text {
+.slogan__form-text {
+  display: none;
+
+  @media (min-width: @tablet-size) {
     display: block;
     margin: 0 auto;
     font-size: 18px;
     line-height: 30px;
   }
+
+  @media (min-width: @desktop-size) {
+    display: inline;
+  }
 }
 
-@media (min-width: @desktop-size) {
 
-
-}

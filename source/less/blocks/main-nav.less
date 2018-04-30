@@ -3,24 +3,22 @@
   margin-bottom: 0;
 }
 
-
 .main-nav__link {
   color: #ffffff;
   display: block;
   padding-top: 15px;
   padding-bottom: 15px;
+
+  @media (min-width: @tablet-size) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+  }
 }
 
 .main-nav__item {
   border-top: 1px solid #485461;
   border-bottom: 1px solid black;
-}
-
-@media (min-width: @tablet-size) {
-  .main-nav__link {
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
 }
 
 @media (min-width: @desktop-size) {

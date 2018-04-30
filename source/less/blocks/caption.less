@@ -2,11 +2,23 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
-  background-position: center -86px;
+  background-position: center -67px;
   text-align: center;
   color: white;
   padding-top: 28px;
   padding-bottom: 52px;
+
+  @media (min-width: @tablet-size) {
+    padding-top: 70px;
+    padding-bottom: 80px;
+    background-position: center -179px;
+  }
+
+  @media (min-width: @desktop-size) {
+    padding-top: 172px;
+    padding-bottom: 100px;
+  }
+
 }
 
 .caption--index-page {
@@ -19,7 +31,13 @@
   background-size: auto auto, 100% auto;
   background-position: center bottom, center bottom;
 
-}
+  @media (min-width: @tablet-size) {
+      width: 330px;
+      box-sizing: border-box;
+      margin: 0 auto;
+      background-image: none;
+    }
+  }
 
 .caption__text {
   font-weight: lighter;
@@ -27,25 +45,14 @@
   line-height: 30px;
   margin: 0 auto;
   width: 230px;
-}
 
-@media (min-width: @tablet-size) {
-  .caption {
-    padding-top: 70px;
-    padding-bottom: 80px;
-    background-position: center -179px;
-  }
-
-  .caption--index-page {
-    width: 330px;
-    box-sizing: border-box;
-    margin: 0 auto;
-    background-image: none;
-  }
-
-  .caption__text {
+  @media (min-width: @tablet-size) {
     font-size: 50px;
     line-height: 60px;
     width: 480px;
+  }
+
+  @media (min-width: @desktop-size) {
+    width: 820px;
   }
 }

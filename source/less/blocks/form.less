@@ -55,6 +55,54 @@
   padding-top: 0;
   max-width: 280px;
   margin: 0 auto;
+
+  @media (min-width: @tablet-size) {
+    border: 2px solid @darker-gray;
+    max-width: 620px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-size) {
+    max-width: 940px;
+  }
+}
+
+.form__textarea {
+  box-sizing: border-box;
+  border: 2px solid #e5e5e5;
+  width: 100%;
+  color: @base-color;
+  font-size: 18px;
+  line-height: 30px;
+  padding-bottom: 92px;
+
+  @media (min-width: @tablet-size) {
+    padding-bottom: 84px;
+  }
+
+  @media (min-width: @desktop-size) {
+    padding-bottom: 18px;
+  }
+}
+
+.form__fieldset--textarea {
+  margin-bottom: 45px;
+  box-sizing: border-box;
+  padding: 0;
+
+  @media (min-width: @tablet-size) {
+    width: 660px;
+    padding-bottom: 49px;
+    margin-bottom: 67px;
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+
+  @media (min-width: @desktop-size) {
+    width: 940px;
+    padding-bottom: 39px;
+  }
 }
 
 .form__initials-group:last-child {
@@ -82,30 +130,41 @@
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
+
+  @media (min-width: @tablet-size) {
+    order: -1;
+    width: 620px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 31px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: @desktop-size) {
+    padding-bottom: 0;
+    padding-right: 0;
+    padding-left: 0;
+    width: 1200px;
+  }
 }
 
 .form__contacts-group {
   padding-top: 37px;
   margin: 0;
+
+  @media (min-width: @desktop-size) {
+    padding-left: 60px;
+    padding-right: 60px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .form__contacts-label {
   display: block;
   margin-bottom: 21px;
-}
-
-.form__textarea {
-  box-sizing: border-box;
-  border: 2px solid #e5e5e5;
-  width: 100%;
-  color: @base-color;
-  font-size: 18px;
-  line-height: 30px;
-  padding-bottom: 32px;
-}
-
-.form__fieldset--textarea {
-  margin-bottom: 36px;
 }
 
 .form__comment {
@@ -122,7 +181,16 @@
   margin: 0 auto;
 
   sup {
+    font-size: 14px;
     color: @base-pink;
+  }
+}
+
+.form__note-long {
+  display: none;
+
+  @media (min-width: @desktop-size) {
+    display: inline;
   }
 }
 
@@ -132,12 +200,32 @@
   padding-right: 20px;
   padding-left: 20px;
   margin: 0 auto;
-  margin-bottom: 16px;
+  margin-bottom: 34px;
   box-sizing: border-box;
+
+  @media (min-width: @tablet-size) {
+    max-width: 620px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-grow: 1;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @desktop-size) {
+    max-width: 960px;
+  }
 }
 
 .form__button {
   margin-bottom: 35px;
+
+  @media (min-width: @tablet-size) {
+    width: 300px;
+    box-sizing: border-box;
+    margin-bottom: 0;
+  }
 }
 
 .form__popup {
@@ -149,6 +237,24 @@
   background-color: @base-gray;
   padding-top: 39px;
   padding-bottom: 0;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-size) {
+    order: -2;
+    width: 660px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 57px;
+    padding-top: 5px;
+    box-sizing: border-box;
+    background-color: white;
+  }
+
+  @media (min-width: @desktop-size) {
+    width: 435px;
+    margin: 0;
+    padding-top: 0;
+  }
 }
 
 .form__fieldset--radiobuttons {
@@ -158,6 +264,20 @@
   padding-bottom: 46px;
   margin: 0 auto;
   box-sizing: border-box;
+
+  @media (min-width: @tablet-size) {
+    max-width: 620px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 58px;
+  }
+
+  @media (min-width: @desktop-size) {
+    width: 435px;
+    padding-bottom: 59px;
+    padding-left: 53px;
+    padding-right: 9px;
+  }
 }
 
 @media (min-width: @tablet-size) {
@@ -187,32 +307,6 @@
     margin-right: 28px;
   }
 
-  .form__radiobuttons {
-    order: -2;
-    width: 660px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 57px;
-    padding-top: 5px;
-    box-sizing: border-box;
-    background-color: white;
-  }
-
-  .form__fieldset--radiobuttons {
-    padding-bottom: 58px;
-  }
-
-  .form__contacts {
-    order: -1;
-    width: 620px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 31px;
-    margin-left: auto;
-    margin-right: auto;
-    box-sizing: border-box;
-  }
-
   .form__label-initials {
     display: flex;
     margin-bottom: 52px;
@@ -231,25 +325,6 @@
     margin-bottom: 57px;
   }
 
-  .form__fieldset {
-    border: 2px solid @darker-gray;
-    max-width: 620px;
-    box-sizing: border-box;
-    margin: 0 auto;
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-
-  .form__fieldset--textarea {
-    width: 660px;
-    padding-bottom: 49px;
-    margin-bottom: 67px;
-  }
-
-  .form__textarea {
-    padding-bottom: 24px;
-  }
-
   .form__caption--contacts {
     display: block;
   }
@@ -262,6 +337,10 @@
     display: flex;
     flex-direction: column-reverse;
     margin-bottom: 36px;
+
+    @media (min-width: @desktop-size) {
+      margin-bottom: 17px;
+    }
   }
 
   .form__contacts-label:last-child {
@@ -278,22 +357,8 @@
     padding-left: 20px;
   }
 
-  .form__footer {
-    max-width: 620px;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    flex-grow: 1;
-  }
-
   .form__note {
     margin: 0;
-  }
-
-  .form__button {
-    width: 300px;
-    box-sizing: border-box;
   }
 }
 
@@ -314,11 +379,6 @@
     margin-bottom: 21px;
   }
 
-  .form__fieldset {
-    max-width: 940px;
-    padding: 0;
-  }
-
   .form__caption {
     margin-right: 0;
   }
@@ -334,30 +394,8 @@
     padding-right: 21px;
   }
 
-  .form__radiobuttons {
-    width: 435px;
-    box-sizing: border-box;
-    margin: 0;
-    padding-top: 0;
-  }
-
-  .form__fieldset--radiobuttons {
-    width: 435px;
-    box-sizing: border-box;
-    padding-bottom: 59px;
-  }
-
-  .form__fieldset--textarea {
-    width: 940px;
-  }
-
-  .form__contacts {
-    width: 1200px;
-  }
-
-  .form__contacts-group {
-    display: flex;
-    justify-content: space-between;
+  .form__label--contacts {
+    margin-top: 0;
   }
 
   .form__contacts-label {

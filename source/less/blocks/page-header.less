@@ -5,6 +5,15 @@
   font-weight: bold;
   line-height: 32px;
   text-transform: uppercase;
+
+  @media (min-width: @desktop-size) {
+    position: absolute;
+    line-height: 18px;
+    font-weight: normal;
+    text-transform: none;
+    background-color: hsla(0, 0%, 0%, 0.3);
+    width: 100%;
+  }
 }
 
 .page-header__toggle {
@@ -38,6 +47,7 @@
   .page-header__wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-left: 130px;
     padding-right: 130px;
     width: 1200px;
