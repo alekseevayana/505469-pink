@@ -1,17 +1,35 @@
 .photo-post {
+  position: relative;
   font-size: 14px;
+  line-height: 24px;
   color: @base-color;
   margin-bottom: 20px;
+
+  & img {
+    vertical-align: bottom;
+  }
 }
 
-.photo-post__picture {
-
+.photo-post__descr {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  background-color: @base-pink;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .photo-post__author {
   font-weight: bold;
   margin: 0;
-  margin-bottom: 10px;
 }
 
 .photo-post__time {
@@ -20,12 +38,13 @@
 
 .photo-post__text {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 9px;
 }
 
 .photo-post__wrapper {
-  padding-top: 25px;
-  padding-left: 18px;
+  padding-top: 19px;
+  padding-left: 20px;
+  padding-bottom: 21px;
   background-color: @base-gray;
   box-sizing: border-box;
 }
@@ -36,6 +55,19 @@
   font-size: 12px;
   line-height: 24px;
   margin: 0;
+  padding-left: 31px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 12px;
+    left: 0;
+    top: 6px;
+    background-image: url("../img/icon-heart.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 @media (min-width: @tablet-size) {

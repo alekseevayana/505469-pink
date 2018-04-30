@@ -5,16 +5,28 @@
   padding-bottom: 27px;
   padding-right: 22px;
   padding-left: 18px;
+
+  @media (min-width: @tablet-size) {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media (min-width: @desktop-size) {
+    padding-left: 80px;
+    padding-right: 60px;
+  }
 }
 
 .photo-filter__image {
-  margin-bottom: 42px;
+  margin-bottom: 38px;
 }
 
 .photo-filter__list {
   margin-bottom: 42px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .photo-filter__buttons {
@@ -29,11 +41,27 @@
   margin-bottom: 12px;
 }
 
-.photo-filter__button {
-  width: 45px;
-  height: 45px;
+.photo-filter__edit-btn {
+  width: 48px;
+  height: 48px;
+  border: none;
+  background-color: transparent;
   display: inline-block;
   box-sizing: border-box;
+  position: relative;
+  padding: 0;
+  margin-bottom: 29px;
+}
+
+.photo-filter__edit-btn svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.photo-filter__edit-btn svg path,
+.photo-filter__edit-btn svg rect {
+
 }
 
 .photo-filter__item:first-child {
@@ -51,13 +79,6 @@
 }
 
 @media (min-width: 660px) {
-  .photo-filter {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
   .photo-filter__wrapper {
     width: 300px;
   }
@@ -92,10 +113,6 @@
 }
 
 @media (min-width: @desktop-size) {
-  .photo-filter {
-    padding-left: 80px;
-    padding-right: 60px;
-  }
 
   .photo-filter__wrapper {
     width: 410px;
