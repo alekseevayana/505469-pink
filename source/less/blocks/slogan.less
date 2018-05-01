@@ -3,7 +3,7 @@
   font-size: 24px;
   line-height: 30px;
   color: @base-color;
-  margin-bottom: 39px;
+  margin-bottom: 0px;
 
   &--above-photos {
     padding-top: 46px;
@@ -48,17 +48,20 @@
   font-weight: lighter;
 }
 
-.slogan__text-first {
-  margin-bottom: 35px;
+.slogan__text:first-child {
+  margin-bottom: 26px;
+}
+
+.slogan__text:last-child {
+  margin-bottom: 0;
 }
 
 .slogan__text {
-  margin: 0;
+  margin-top: 0;
 
   @media (min-width: @tablet-size) {
-    font-size: 18px;
-    line-height: 30px;
-    width: 495px;
+
+    width: 100%;
     margin: 0 auto;
 
     &:first-child {
