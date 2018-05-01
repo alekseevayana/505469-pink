@@ -1,30 +1,49 @@
 .photo-filter {
   background-color: @base-gray;
+  box-sizing: border-box;
+}
+
+.photo-filter__content {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 27px;
   padding-right: 22px;
   padding-left: 18px;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-size) {
+    max-width: 660px;
     display: flex;
     justify-content: space-between;
     padding-left: 20px;
     padding-right: 20px;
+    padding-top: 57px;
+    padding-bottom: 51px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media (min-width: @desktop-size) {
+    max-width: 940px;
     padding-left: 80px;
     padding-right: 60px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
 .photo-filter__image {
   margin-bottom: 38px;
+
+  @media (min-width: @tablet-size) {
+    height: 400px;
+    width: 300px;
+    margin-bottom: 0;
+  }
 }
 
 .photo-filter__list {
-  margin-bottom: 42px;
+  margin-bottom: 25px;
   display: flex;
   justify-content: space-evenly;
 }
@@ -32,13 +51,38 @@
 .photo-filter__buttons {
   background-color: @base-gray;
   text-align: center;
-  padding-top: 40px;
-  padding-bottom: 41px;
-  border-top: 2px solid #dddfe0;
+  padding-top: 38px;
+  padding-bottom: 14px;
+  border-top: 1px solid #dddfe0;
+
+  @media (min-width: @tablet-size) {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 135px;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+  @media (min-width: @desktop-size) {
+    flex-direction: row;
+    min-height: auto;
+  }
 }
 
 .photo-filter__buttons--post {
   margin-bottom: 12px;
+
+  @media (min-width: @tablet-size) {
+    margin-bottom: 0;
+  }
+}
+
+.photo-filter__post-btn {
+  @media (min-width: @desktop-size) {
+    width: 183px;
+  }
 }
 
 .photo-filter__edit-btn {
@@ -78,10 +122,23 @@
   display: none;
 }
 
-@media (min-width: 660px) {
-  .photo-filter__wrapper {
-    width: 300px;
+.photo-filter__wrapper {
+
+  @media (min-width: @tablet-size) {
+    width: 275px;
+    padding-right: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
   }
+
+  @media (min-width: @desktop-size) {
+    padding-right: 0;
+  }
+}
+
+@media (min-width: 660px) {
 
   .photo-filter__list {
     display: flex;

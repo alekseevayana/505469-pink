@@ -18,10 +18,17 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    box-sizing: border-box;
   }
 }
 
 @media (min-width: @desktop-size) {
+  .page-main__photos {
+    max-width: 960px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
   .page-main__container {
     padding-left: 120px;
   }

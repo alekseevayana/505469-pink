@@ -8,6 +8,33 @@
   & img {
     vertical-align: bottom;
   }
+
+  @media (min-width: @tablet-size) {
+    min-height: 455px;
+
+    & img {
+      height: 300px;
+    }
+
+    &--panorama img {
+      height: 509px;
+    }
+  }
+
+  @media (min-width: @desktop-size) {
+    margin-bottom: 54px;
+    min-height: 555px;
+
+    & img {
+      height: 400px;
+    }
+
+    &--panorama img {
+      height: 506px;
+    }
+
+  }
+
 }
 
 .photo-post__descr {
@@ -25,28 +52,84 @@
   padding-bottom: 6px;
   padding-right: 20px;
   padding-left: 20px;
+
+  @media (min-width: @tablet-size) {
+    top: 57px;
+  }
+
+  @media (min-width: @desktop-size) {
+    top: 54px;
+    right: 128px;
+  }
+
 }
 
 .photo-post__author {
   font-weight: bold;
+  color: @base-color;
   margin: 0;
+
+  @media (min-width: @tablet-size) {
+    order: -2;
+  }
+
 }
 
 .photo-post__time {
   font-weight: lighter;
+  font-size: 12px;
+  text-transform: uppercase;
 }
 
 .photo-post__text {
   margin: 0;
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+
+  @media (min-width: @tablet-size) {
+    flex-grow: 1;
+  }
 }
 
 .photo-post__wrapper {
   padding-top: 19px;
   padding-left: 20px;
-  padding-bottom: 21px;
+  padding-bottom: 20px;
+  padding-right: 35px;
   background-color: @base-gray;
   box-sizing: border-box;
+
+  &--panorama {
+    padding-right: 0;
+  }
+
+  @media (min-width: @tablet-size) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100%;
+    padding-left: 28px;
+    padding-top: 24px;
+    padding-bottom: 21px;
+    padding-right: 31px;
+
+    &--panorama {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding-left: 28px;
+      padding-top: 24px;
+      padding-bottom: 16px;
+      padding-right: 28px;
+      height: auto;
+    }
+
+  }
+
+  @media (min-width: @desktop-size) {
+
+  }
 }
 
 .photo-post__footer {
@@ -68,6 +151,30 @@
     background-image: url("../img/icon-heart.svg");
     background-repeat: no-repeat;
   }
+
+  @media (min-width: @tablet-size) {
+    padding-left: 0;
+    min-width: 125px;
+
+
+    &::before {
+      left: auto;
+      right: 0;
+    }
+  }
+}
+
+@media (min-width: @tablet-size) {
+  .photo-post__wrapper--panorama .photo-post__footer {
+    padding-right: 0;
+    margin-right: -5px;
+    order: -1;
+  }
+
+  .photo-post__wrapper--panorama .photo-post__footer::before {
+    right: 5px;
+  }
+
 }
 
 @media (min-width: @tablet-size) {
@@ -79,10 +186,7 @@
 
   .photo-post--panorama {
     width: auto;
-  }
-
-  .photo-post__wrapper {
-    min-height: 155px;
+    margin-bottom: 49px;
   }
 }
 

@@ -3,16 +3,37 @@
   font-size: 24px;
   line-height: 30px;
   color: @base-color;
-  padding-top: 46px;
   margin-bottom: 39px;
 
+  &--above-photos {
+    padding-top: 46px;
+  }
+
+  &--below-photos {
+    padding-top: 20px;
+    margin-bottom: 42px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
   @media (min-width: @tablet-size) {
-    padding-top: 92px;
     margin-bottom: 72px;
+
+    &--above-photos {
+      padding-top: 92px;
+    }
+
+    &--below-photos {
+      padding-top: 47px;
+      margin-bottom: 68px;
+    }
   }
 
   @media (min-width: @desktop-size) {
-    margin-bottom: 68px;
+    &--below-photos {
+      padding-top: 5px;
+      margin-bottom: 66px;
+    }
   }
 
 }
