@@ -21,8 +21,8 @@
 
   @media (min-width: @tablet-size) {
       width: auto;
-      padding-left: 32px;
-      padding-right: 32px;
+      padding-left: 37px;
+      padding-right: 37px;
       margin-bottom: 48px;
     }
 }
@@ -51,6 +51,33 @@
 
   @media (min-width: @desktop-size) {
     flex-basis: 200px;
+
+    &:nth-child(1) {
+      order: -6;
+    }
+
+    &:nth-child(2) {
+      order: -2;
+    }
+
+    &:nth-child(3) {
+      order: -4;
+    }
+
+    &:nth-child(4) {
+      order: -1;
+    }
+
+    &:nth-child(5) {
+      order: -3;
+      margin-right: -52px;
+      margin-left: -18px;
+    }
+
+    &:nth-child(6) {
+      margin-right: -52px;
+      margin-left: -17px;
+    }
   }
 }
 
