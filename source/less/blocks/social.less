@@ -1,5 +1,31 @@
 .social__list {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  min-width: 176px;
+  margin-bottom: 0;
+}
+
+.social__item {
+  border: 2px solid @darker-gray;
+  border-radius: 100px;
+  width: 47px;
+  height: 47px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.social__link {
+  width: 20px;
+  height: 20px;
+}
+
+.social__link path {
+  fill: @base-pink;
 }

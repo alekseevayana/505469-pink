@@ -1,25 +1,120 @@
 .slogan {
   text-align: center;
-  font-size: 24px;
+  font-size: 14px;
+  line-height: 30px;
   color: @base-color;
-  padding-top: 46px;
-  padding-bottom: 30px;
+  margin-bottom: 0px;
+
+  &--above-photos {
+    padding-top: 46px;
+
+    @media (min-width: @tablet-size) {
+      padding-top: 92px;
+      width: 580px;
+    }
+
+    @media (min-width: @desktop-size) {
+      width: 100%;
+    }
+  }
+
+  &--below-photos {
+    padding-top: 20px;
+    margin-bottom: 42px;
+
+    @media (min-width: @tablet-size) {
+      font-size: 18px;
+      padding-top: 44px;
+      margin-bottom: 69px;
+    }
+
+    @media (min-width: @desktop-size) {
+      padding-top: 11px;
+      margin-bottom: 66px;
+    }
+  }
 }
 
-.slogan__text {
-  margin: 0;
+.slogan--below-photos p {
+  width: 264px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 0;
+
+  @media (min-width: @tablet-size) {
+    width: 436px;
+  }
+}
+
+.slogan__text-first {
+  margin-bottom: 26px;
+}
+
+@media (min-width: @tablet-size) {
+  margin-bottom: 72px;
+  font-size: 24px;
+
+  &--above-photos {
+    padding-top: 92px;
+  }
+
+  &--below-photos {
+    padding-top: 47px;
+    margin-bottom: 68px;
+  }
+}
+
+@media (min-width: @desktop-size) {
+  &--below-photos {
+    padding-top: 5px;
+    margin-bottom: 66px;
+  }
+}
+
+.slogan__text--normal {
+  line-height: 30px;
+  font-weight: normal;
 }
 
 .slogan__text--light {
   font-weight: lighter;
 }
 
-.slogan__text:first-child {
-  margin-bottom: 35px;
+.slogan__text:last-child {
+  margin-bottom: 0;
 }
 
-.slogan__text--normal {
-  font-size: 14px;
-  line-height: 30px;
-  font-weight: normal;
+.slogan__text {
+  margin-top: 0;
+
+  @media (min-width: @tablet-size) {
+
+    width: 100%;
+    margin: 0 auto;
+
+    &:first-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: @desktop-size) {
+    width: 778px;
+  }
 }
+
+.slogan__form-text {
+  display: none;
+
+  @media (min-width: @tablet-size) {
+    display: block;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-size) {
+    display: inline;
+  }
+}
+
+

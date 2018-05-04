@@ -1,8 +1,36 @@
 .popup {
-  max-width: 280px;
   text-align: center;
   margin: 0 auto;
   padding-top: 45px;
+  box-sizing: border-box;
+}
+
+.popup--error {
+  max-width: 320px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.popup--sent {
+
+}
+
+.popup__button {
+  max-width: 280px;
+  box-sizing: border-box;
+}
+
+.popup__wrapper-text {
+  max-width: 320px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin: 0 auto;
+}
+
+.popup__wrapper-btn {
+  background-color: @base-gray;
+  padding-top: 48px;
+  padding-bottom: 52px;
 }
 
 .popup__title {
@@ -17,6 +45,10 @@
 
 .popup__text--sent {
   margin-bottom: 35px;
+}
+
+.popup {
+  display: none;
 }
 
 @media (min-width: @tablet-size) {

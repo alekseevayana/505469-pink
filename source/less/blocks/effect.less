@@ -5,14 +5,61 @@
 @media (min-width: @tablet-size) {
   .effect {
     display: block;
+    font-size: 14px;
+    line-height: 24px;
+    padding-top: 97px;
+    padding-bottom: 106px;
+
+    @media (min-width: @desktop-size) {
+      background-color: @base-gray;
+      font-size: 18px;
+      line-height: 30px;
+      padding-top: 6px;
+    }
   }
 
   .effect__container {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
+  }
+
+  .effect__image {
+    width: 239px;
+  }
+
+  .effect__title {
+    margin: 0;
+    margin-bottom: 7px;
+    font-size: 30px;
+    line-height: 36px;
+    width: 170px;
+
+    @media (min-width: @desktop-size) {
+      width: 100%;
+      margin-bottom: 21px;
+    }
+  }
+
+  .effect__text {
+    margin: 0;
+    margin-bottom: 11px;
+
+    @media (min-width: @desktop-size) {
+      margin-bottom: 32px;
+    }
+  }
+
+  .effect__link {
+    color: @base-pink;
   }
 
   .effect__text-block {
-    width: 50%;
+    flex: 1;
+    padding-left: 71px;
+
+    @media (min-width: @desktop-size) {
+      padding-left: 90px;
+      padding-top: 112px;
+    }
   }
 }
