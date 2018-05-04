@@ -1,9 +1,9 @@
 .photo-post {
-  position: relative;
   font-size: 14px;
   line-height: 24px;
   color: @base-color;
   margin-bottom: 20px;
+  position: relative;
 
   & img {
     vertical-align: bottom;
@@ -11,29 +11,51 @@
 
   @media (min-width: @tablet-size) {
     min-height: 455px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+
+    &--panorama {
+      width: auto;
+      margin-bottom: 49px;
+    }
 
     & img {
-      height: 300px;
+      //height: 300px;
     }
 
     &--panorama img {
-      height: 509px;
+      height: 507px;
     }
   }
 
   @media (min-width: @desktop-size) {
-    margin-bottom: 54px;
+    margin-bottom: 50px;
     min-height: 555px;
 
     & img {
-      height: 400px;
+      //height: 400px;
     }
 
     &--panorama img {
-      height: 506px;
+      //height: 506px;
     }
   }
+}
 
+.photo-post__img-full {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.photo-post__picture-content {
+  max-width: 320px;
+  padding-right: 20px;
+
+  @media (min-width: @desktop-size) {
+    max-width: 660px;
+  }
 }
 
 .photo-post__descr {
@@ -123,12 +145,26 @@
       padding-right: 28px;
       height: auto;
     }
-
   }
 
   @media (min-width: @desktop-size) {
-
+    &--panorama {
+      min-width: 940px;
+    }
   }
+}
+
+@media (min-width: @tablet-size) {
+  .photo-post__wrapper--panorama .photo-post__footer {
+    padding-right: 0;
+    margin-right: -5px;
+    order: -1;
+  }
+
+  .photo-post__wrapper--panorama .photo-post__footer::before {
+    right: 5px;
+  }
+
 }
 
 .photo-post__footer {
@@ -163,37 +199,7 @@
   }
 }
 
-@media (min-width: @tablet-size) {
-  .photo-post__wrapper--panorama .photo-post__footer {
-    padding-right: 0;
-    margin-right: -5px;
-    order: -1;
-  }
 
-  .photo-post__wrapper--panorama .photo-post__footer::before {
-    right: 5px;
-  }
-
-}
-
-@media (min-width: @tablet-size) {
-  .photo-post {
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .photo-post--panorama {
-    width: auto;
-    margin-bottom: 49px;
-  }
-}
-
-@media (min-width: @desktop-size) {
-  .photo-post__wrapper--panorama {
-    min-width: 940px;
-  }
-}
 
 
 

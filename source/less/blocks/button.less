@@ -11,21 +11,63 @@
   padding-bottom: 14px;
   width: 100%;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 .button--download {
   border: 3px solid white;
+
+  @media (min-width: @desktop-size) {
+    font-size: 21px;
+    line-height: 18px;
+    padding-top: 14px;
+    padding-bottom: 17px;
+  }
 }
 
 .button--post {
   border: 3px solid @base-pink;
   color: @base-pink;
+  background-color: @base-gray;
+
+  &:hover,
+  &:focus {
+    color: white;
+    background-color: @base-pink;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  @media (min-width: @tablet-size) {
+    padding-top: 14px;
+    padding-bottom: 16px;
+  }
 }
 
 .button--cancel {
   color: @base-color;
   border: 3px solid @base-color;
   opacity: 0.1;
+
+  &:hover,
+  &:focus {
+    color: @base-color;
+    background-color: #f2f2f2;
+    opacity: 0.3;
+  }
+
+  &:active {
+    color: white;
+    background-color: @base-color;
+    opacity: 0.3;
+  }
+
+  @media (min-width: @tablet-size) {
+    padding-top: 14px;
+    padding-bottom: 16px;
+  }
 }
 
 .button--form {
