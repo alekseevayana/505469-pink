@@ -25,6 +25,28 @@
 
   .effect__image {
     width: 239px;
+    position: relative;
+  }
+
+  .effect__image-container::before {
+    position: absolute;
+    content: "";
+    width: 175px;
+    height: 175px;
+    top: 56px;
+    left: 20px;
+    border: 13px solid @base-pink;
+    border-radius: 100%;
+  }
+
+  .effect__image-container::after {
+    position: absolute;
+    content: "24";
+    font-size: 96px;
+    font-weight: bold;
+    top: 139px;
+    left: 63px;
+    color: @base-pink;
   }
 
   .effect__title {

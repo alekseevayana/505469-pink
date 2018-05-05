@@ -57,6 +57,15 @@
   }
 }
 
+.radiobuttons__input:hover + span::before,
+.radiobuttons__input:focus + span::before {
+  border-color: black;
+}
+
+.radiobuttons__input:active + span::before {
+  border-color: @base-pink;
+}
+
 .radiobuttons__input:checked + span::after {
   content: "";
   position: absolute;

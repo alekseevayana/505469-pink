@@ -17,6 +17,16 @@
 .button--download {
   border: 3px solid white;
 
+  &:hover,
+  &:focus {
+    background-color: white;
+    color: @base-pink;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: @desktop-size) {
     font-size: 21px;
     line-height: 18px;
@@ -77,6 +87,21 @@
   border-color: #2aab6d;
   line-height: 30px;
   border-radius: 5px;
+
+  &:hover,
+  &:focus {
+    color: white;
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #1c9b5e;
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
 }
 
 @media (min-width: @tablet-size) {

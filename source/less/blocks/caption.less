@@ -18,26 +18,34 @@
     padding-top: 172px;
     padding-bottom: 100px;
   }
-
 }
 
 .caption--index-page {
+  position: relative;
   height: 315px;
   min-width: 320px;
   font-weight: lighter;
   margin: 0;
-  background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat, no-repeat;
-  background-size: auto auto, 100% auto;
-  background-position: center bottom, center bottom;
+  //background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
+  //background-image: url("../img/bg-back-mobile@1x.jpg");
+  //background-repeat: no-repeat, no-repeat;
+  //background-size: auto auto, 100% auto;
+  //background-position: center bottom, center bottom;
 
   @media (min-width: @tablet-size) {
-      width: 330px;
-      box-sizing: border-box;
-      margin: 0 auto;
-      background-image: none;
-    }
+    width: 330px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    background-image: none;
+    position: static;
   }
+}
+
+.caption__image-hand {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
 
 .caption__text {
   font-weight: lighter;

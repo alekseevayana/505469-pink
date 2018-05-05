@@ -103,6 +103,15 @@
   }
 }
 
+.checkboxes__input:hover + span::before,
+.checkboxes__input:focus + span::before {
+  border-color: black;
+}
+
+.checkboxes__input:active + span::before {
+  border-color: @base-pink;
+}
+
 .checkboxes__input:checked + span::after {
   content: "";
   position: absolute;

@@ -9,7 +9,6 @@
   @media (min-width: @tablet-size) {
     font-size: 14px;
     padding-top: 117px;
-    padding-bottom: 41px;
   }
 
   @media (min-width: @desktop-size) {
@@ -22,6 +21,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  height: auto;
 }
 
 .advantages__title {
@@ -77,6 +77,16 @@
   background-image: url("../img/iphone-screen-mobile@1x.png");
   width: 158px;
   height: 277px;
+
+  @media (min-width: @tablet-size) {
+    background-image: url("../img/iphone-screen-3-tablet@2x.png");
+    background-size: cover;
+    width: 266px;
+    height: 461px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
 }
 
 .advantages__container {
@@ -87,6 +97,7 @@
   .advantages__container {
     display: flex;
     flex-direction: row-reverse;
+    position: relative;
   }
 
   .advantages__list {

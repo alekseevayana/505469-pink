@@ -14,8 +14,13 @@
 
 .rates > svg {
   position: absolute;
-  top: 0;
+  top: -0px;
   left: 0;
+  height: auto;
+
+  @media (min-width: @tablet-size) {
+
+  }
 }
 
 .rates__table {
@@ -69,6 +74,17 @@
   @media (min-width: @desktop-size) {
     padding-top: 15px;
     padding-bottom: 22px;
+  }
+}
+
+.rates__head-row td:nth-child(2),
+.rates__head-row td:nth-child(4),
+.rates__row td:nth-child(2),
+.rates__row td:nth-child(4) {
+  visibility: collapse;
+
+  @media (min-width: @tablet-size) {
+    visibility: visible;
   }
 }
 

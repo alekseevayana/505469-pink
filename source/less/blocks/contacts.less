@@ -72,16 +72,43 @@
   margin: 0;
 }
 
+.contacts__email-link {
+  color: @base-pink;
+  text-decoration: none
+}
+
+.contacts__email-link:hover,
+.contacts__email-link:focus {
+  color: black;
+  text-decoration: underline;
+}
+
+.contacts__email-link:active {
+  opacity: 0.3;
+}
+
 .contacts__map {
   position: relative;
   width: 100%;
   height: 200px;
   overflow: hidden;
   position: relative;
+
+  @media (min-width: @tablet-size) {
+    height: 376px;
+  }
+
+  @media (min-width: @desktop-size) {
+    height: 502px;
+  }
 }
 
 .contacts__map svg {
   position: absolute;
+  top: 0;
+  left: 0;
+  height: auto;
+
 }
 
 .contacts__triangle {

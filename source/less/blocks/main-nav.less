@@ -9,10 +9,25 @@
   padding-top: 15px;
   padding-bottom: 15px;
 
+  &:hover,
+  &:focus {
+    color: @base-pink;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: @tablet-size) {
     padding-top: 15px;
     padding-bottom: 15px;
 
+  }
+
+  @media (min-width: @desktop-size) {
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 }
 

@@ -7,10 +7,12 @@
 
   & img {
     vertical-align: bottom;
+    width: 100%;
+    height: auto;
   }
 
   @media (min-width: @tablet-size) {
-    min-height: 455px;
+    //min-height: 455px;
     width: 300px;
     display: flex;
     flex-direction: column;
@@ -47,6 +49,11 @@
   width: 100%;
   height: auto;
   overflow: hidden;
+  flex-shrink: 0;
+
+  @media (min-width: @tablet-size) {
+    //height: 455px;
+  }
 }
 
 .photo-post__picture-content {
@@ -133,6 +140,7 @@
     padding-top: 24px;
     padding-bottom: 21px;
     padding-right: 31px;
+    min-height: 155px;
 
     &--panorama {
       display: flex;
@@ -143,7 +151,7 @@
       padding-top: 24px;
       padding-bottom: 16px;
       padding-right: 28px;
-      height: auto;
+      min-height: 121px;
     }
   }
 
