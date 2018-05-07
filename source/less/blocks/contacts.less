@@ -7,6 +7,9 @@
     padding-top: 47px;
   }
 
+  @media (min-width: @desktop-size) {
+    padding-top: 68px;
+  }
 }
 
 .contacts__text {
@@ -123,11 +126,13 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 30px;
 
     @media (min-width: @desktop-size) {
       justify-content: space-between;
       padding-left: 24px;
       padding-right: 24px;
+      margin-bottom: 0;
     }
   }
 

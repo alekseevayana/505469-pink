@@ -6,6 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Фото</title>
   <link rel="stylesheet" href="css/style.css">
+  <script>
+  // Picture element HTML5 shiv
+  document.createElement("picture");
+</script>
+  <script src="../picturefill.js" async></script>
 </head>
 <body class="theme">
 <header class="page-header">
@@ -59,6 +64,9 @@
       Видите,&nbsp;как&nbsp;не хватает ваших?</p>
   </div>
   <article class="photo-post photo-post--panorama">
+    <div class="photo-post__descr-wrapper">
+      <span class="photo-post__descr">Панорама дня</span>
+    </div>
     <a href="#" class="photo-post__img-full">
       <picture>
         <source media="(min-width: 1200px)"
@@ -68,7 +76,6 @@
         <img src="./img/panorama-mobile@1x.jpg" srcset="./img/panorama-mobile@2x.jpg 2x" width="100%" height="100%"
              alt="Фото" class="photo-post__picture">
       </picture>
-      <span class="photo-post__descr">Панорама дня</span>
     </a>
     <div class="container">
       <div class="photo-post__wrapper photo-post__wrapper--panorama">
@@ -213,9 +220,11 @@
                   srcset="./img/photo-road-desktop@1x.jpg 1x, ./img/photo-road-desktop@2x.jpg 2x">
           <source media="(min-width: 660px)"
                   srcset="./img/photo-road-tablet@1x.jpg 1x, ./img/photo-road-tablet@2x.jpg 2x">
-          <img src="./img/photo-road-mobile@1x.jpg" srcset="./img/photo-road-mobile@2x.jpg 2x" width="100%" height="100%"
+          <img src="./img/photo-road-mobile@1x.jpg" srcset="./img/photo-road-mobile@2x.jpg 2x" width="100%"
+               height="100%"
                alt="Фото" class="photo-post__picture">
-        </picture>      </a>
+        </picture>
+      </a>
       <div class="photo-filter__wrapper">
         <ul class="photo-filter__list list">
           <li class="photo-filter__item">
@@ -225,9 +234,10 @@
   <path fill="#b5b9be" d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
 </svg>
             </button>
-            <label class="photo-filter__range-wrapper">
-              <input type="range" class="photo-filter__range">
-            </label>
+            <div class="photo-filter__range-wrapper">
+              <div type="range" class="photo-filter__scale"></div>
+              <div class="photo-filter__range-toggle"></div>
+            </div>
           </li>
           <li class="photo-filter__item">
             <button class="photo-filter__edit-btn">
@@ -237,9 +247,10 @@
   <rect fill="#b5b9be" y="40" width="48" height="3"/>
 </svg>
             </button>
-            <label class="photo-filter__range-wrapper">
-              <input type="range" class="photo-filter__range">
-            </label>
+            <div class="photo-filter__range-wrapper">
+              <div type="range" class="photo-filter__scale"></div>
+              <div class="photo-filter__range-toggle"></div>
+            </div>
           </li>
           <li class="photo-filter__item">
             <button class="photo-filter__edit-btn">
@@ -248,9 +259,10 @@
   <path fill="#b5b9be" d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
 </svg>
             </button>
-            <label class="photo-filter__range-wrapper">
-              <input type="range" class="photo-filter__range">
-            </label>
+            <div class="photo-filter__range-wrapper">
+              <div type="range" class="photo-filter__scale"></div>
+              <div class="photo-filter__range-toggle"></div>
+            </div>
           </li>
         </ul>
         <div class="photo-filter__buttons">
@@ -265,12 +277,12 @@
 </main>
 <footer class="page-footer">
   <div class="page-footer__container container">
-    <div class="page-footer__logo">
+    <a class="page-footer__logo">
       <picture>
         <source media="(min-width: 1200px)" srcset="./img/logo-pink-blue-desktop.svg">
-        <img src="./img/logo-pink-blue-mobile.svg" alt="Логотив в футере" width="143" height="auto">
+        <img src="./img/logo-pink-blue-mobile.svg" alt="Логотив в футере" width="143" height="42.5">
       </picture>
-    </div>
+    </a>
     <div class="page-footer__social social">
       <ul class="social__list list">
         <li class="social__item">

@@ -56,10 +56,17 @@
   margin-bottom: 25px;
   display: flex;
   justify-content: space-evenly;
+  width: 240px;
+  margin-right: auto;
+  margin-left: auto;
 
   @media (min-width: @tablet-size) {
     display: flex;
     flex-direction: column;
+  }
+
+  @media (min-width: @desktop-size) {
+    width: 100%;
   }
 }
 
@@ -110,6 +117,10 @@
   position: relative;
   padding: 0;
   margin-bottom: 29px;
+
+  @media (min-width: @tablet-size) {
+    margin-bottom: 0;
+  }
 }
 
 .photo-filter__edit-btn svg {
@@ -126,6 +137,9 @@
 .photo-filter__item {
   @media (min-width: @tablet-size) {
     border-bottom: 1px solid @darker-gray;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 
   @media (min-width: @desktop-size) {
@@ -164,9 +178,25 @@
   }
 }
 
-.photo-filter__range {
+.photo-filter__range-wrapper {
+  position: relative;
   width: 240px;
-  margin-left: -15px;
+  margin-left: -25px;
+  @media (min-width: 660px) {
+    width: 202px;
+    padding-bottom: 0px;
+    position: relative;
+  }
+
+  @media (min-width: @desktop-size) {
+    width: 290px;
+  }
+}
+
+.photo-filter__scale {
+  width: 240px;
+  height: 2px;
+  background-color: black;
 
   @media (min-width: @tablet-size) {
     display: inline-block;
@@ -176,6 +206,19 @@
   @media (min-width: @desktop-size) {
     margin-left: -29px;
   }
+}
+
+.photo-filter__range-toggle {
+  width: 10px;
+  height: 10px;
+
+  background: @base-gray;
+  border: 2px solid @base-pink;
+  border-radius: 100%;
+  cursor: pointer;
+  position: absolute;
+  top: -6px;
+  left: 80%;
 }
 
 @media (min-width: 660px) {
@@ -197,14 +240,4 @@
       width: 410px;
     }
   }
-
-  .photo-filter__range-wrapper {
-    width: 202px;
-    padding-bottom: 33px;
-
-    @media (min-width: @desktop-size) {
-      width: 290px;
-    }
-  }
-
 }

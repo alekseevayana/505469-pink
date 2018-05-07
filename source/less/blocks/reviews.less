@@ -8,10 +8,18 @@
     font-size: 18px;
     line-height: 30px;
     padding-top: 19px;
+    margin-bottom: 20px;
   }
 
   @media (min-width: @desktop-size) {
     padding-top: 185px;
+    margin-bottom: 0;
+    max-width: 960px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
   }
 }
 
@@ -67,7 +75,6 @@
   @media (min-width: @desktop-size) {
     font-size: 18px;
   }
-
 }
 
 .reviews__text {
@@ -75,5 +82,65 @@
 
   @media (min-width: @tablet-size) {
     margin-bottom: 34px;
+  }
+}
+
+.reviews__text::before {
+  @media (min-width: @desktop-size) {
+    position: absolute;
+    content: "";
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+    width: 79px;
+    height: 64px;
+    top: 72px;
+    left: 46%;
+  }
+}
+
+.reviews__prev,
+.reviews__next {
+  display: none;
+  @media (min-width: @desktop-size) {
+    display: block;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+  }
+}
+
+.reviews__prev:hover path,
+.reviews__prev:focus path,
+.reviews__next:hover path,
+.reviews__next:focus path {
+  @media (min-width: @desktop-size) {
+    fill: #283645;
+    cursor: pointer;
+  }
+}
+
+.reviews__prev:active path,
+.reviews__next:active path {
+  @media (min-width: @desktop-size) {
+    fill: @base-gray;
+  }
+}
+
+.reviews__prev {
+  @media (min-width: @desktop-size) {
+    width: 24px;
+    height: 42px;
+    top: 212px;
+    left: 13px;
+  }
+}
+
+.reviews__next {
+  @media (min-width: @desktop-size) {
+    position: absolute;
+    width: 24px;
+    height: 42px;
+    top: 212px;
+    right: 24px;
   }
 }

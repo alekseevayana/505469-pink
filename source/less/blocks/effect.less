@@ -7,14 +7,17 @@
     display: block;
     font-size: 14px;
     line-height: 24px;
-    padding-top: 97px;
-    padding-bottom: 106px;
+    padding-top: 59px;
+    padding-bottom: 0px;
+    margin-bottom: 79px;
 
     @media (min-width: @desktop-size) {
       background-color: @base-gray;
       font-size: 18px;
       line-height: 30px;
-      padding-top: 6px;
+      padding-top: 24px;
+      padding-bottom: 65px;
+      margin-bottom: 0;
     }
   }
 
@@ -25,7 +28,16 @@
 
   .effect__image {
     width: 239px;
+    height: 279px;
     position: relative;
+    background-image: url("../img/icon-timer.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media (min-width: @desktop-size) {
+      width: 299px;
+      height: 346px;
+    }
   }
 
   .effect__image-container::before {
@@ -37,6 +49,14 @@
     left: 20px;
     border: 13px solid @base-pink;
     border-radius: 100%;
+
+    @media (min-width: @desktop-size) {
+      width: 224px;
+      height: 224px;
+      top: 70px;
+      left: 23px;
+      border: 15px solid @base-pink;
+    }
   }
 
   .effect__image-container::after {
@@ -47,6 +67,12 @@
     top: 139px;
     left: 63px;
     color: @base-pink;
+
+    @media (min-width: @desktop-size) {
+      font-size: 120px;
+      top: 174px;
+      left: 79px;
+    }
   }
 
   .effect__title {
@@ -78,10 +104,11 @@
   .effect__text-block {
     flex: 1;
     padding-left: 71px;
+    padding-top: 39px;
 
     @media (min-width: @desktop-size) {
-      padding-left: 90px;
-      padding-top: 112px;
+      padding-left: 67px;
+      padding-top: 91px;
     }
   }
 }

@@ -8,12 +8,13 @@
 
   @media (min-width: @tablet-size) {
     font-size: 14px;
-    padding-top: 117px;
+    padding-top: 81px;
   }
 
   @media (min-width: @desktop-size) {
     font-size: 18px;
     line-height: 30px;
+    padding-top: 118px;
   }
 }
 
@@ -40,6 +41,10 @@
 .advantages__description {
   color: @base-color;
   margin: 0 auto;
+  @media (min-width: @desktop-size) {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 }
 
 .advantages__list {
@@ -54,7 +59,7 @@
   padding-left: 8px;
 
   @media (min-width: @tablet-size) {
-    margin-bottom: 33px;
+    margin-bottom: 42px;
     padding-left: 0px;
   }
 
@@ -66,9 +71,11 @@
 
   @media (min-width: @desktop-size) {
     margin-bottom: 0;
-    width: 230px;
+    width: 281px;
     padding-left: 0;
     padding-right: 0;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -82,15 +89,58 @@
     background-image: url("../img/iphone-screen-3-tablet@2x.png");
     background-size: cover;
     width: 266px;
-    height: 461px;
+    height: 481px;
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 22px;
+  }
+}
+
+.advantage__image-item {
+  @media (min-width: @desktop-size) {
+    margin-bottom: 55px;
+  }
+}
+
+.advantages__item:first-child .advantage__image-item {
+  display: none;
+
+  @media (min-width: @desktop-size) {
+    display: block;
+  }
+}
+
+.advantages__item:first-child .advantage__image-item {
+  @media (min-width: @desktop-size) {
+    background-image: url("../img/iphone-screen-1-desktop@2x.png");
+    width: 266px;
+    height: 303px;
+    background-size: cover;
+  }
+}
+
+.advantages__item:nth-child(2) .advantage__image-item {
+  @media (min-width: @desktop-size) {
+    background-image: url("../img/iphone-screen-2-desktop@2x.png");
+    width: 266px;
+    height: 303px;
+    background-size: cover;
+  }
+}
+
+.advantages__item:last-child .advantage__image-item {
+  @media (min-width: @desktop-size) {
+    background-image: url("../img/iphone-screen-3-desktop@2x.png");
+    width: 266px;
+    height: 303px;
+    background-size: cover;
   }
 }
 
 .advantages__container {
-
+  @media (min-width: @desktop-size) {
+    margin-top: -120px;
+  }
 }
 
 @media (min-width: @tablet-size) {
@@ -103,7 +153,7 @@
   .advantages__list {
     width: 310px;
     box-sizing: border-box;
-    margin-bottom: 0;
+    margin-bottom: 41px;
   }
 
   .advantages__item {

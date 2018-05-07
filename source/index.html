@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.css">
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement("picture");
+  </script>
+  <script src="../picturefill.js" async></script>
 </head>
 <body class="theme">
 <header class="page-header">
@@ -114,17 +119,20 @@
     <div class="container advantages__container">
       <ul class="advantages__list list">
         <li class="advantages__item">
+          <div class="advantage__image-item"></div>
           <h3 class="advantages__title">Поднимает настроение</h3>
           <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
             несколько кликов!</p>
         </li>
         <li class="advantages__item">
+          <div class="advantage__image-item"></div>
           <h3 class="advantages__title">Меняет мир вокруг
           </h3>
           <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
             усилить эффект</p>
         </li>
         <li class="advantages__item">
+          <div class="advantage__image-item"></div>
           <h3 class="advantages__title">Заводит новых&nbsp;друзей</h3>
           <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
             новых</p>
@@ -138,9 +146,9 @@
     <div class="effect__container container">
       <div class="effect__image">
         <div class="effect__image-container">
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="239px" height="276px" viewBox="0 0 298 345.097" enable-background="new 0 0 298 345.097" xml:space="preserve">
-  <path fill="#dedede" d="M264.568,102.055l5.355-5.355c7.717-7.717,9.124-18.938,3.126-24.935c-5.997-5.997-17.217-4.59-24.934,3.127l-5.386,5.385 C221.768,63.292,196.11,51.875,168,48.297v-9.583h7.658c10.914,0,19.843-8.711,19.843-19.357S186.573,0,175.659,0h-53.317  c-10.913,0-19.842,8.711-19.842,19.357s8.929,19.357,19.842,19.357H130v9.583C56.681,57.629,0,120.244,0,196.097  c0,82.291,66.709,149,149,149c82.29,0,149-66.709,149-149C298,160.434,285.465,127.703,264.568,102.055z M149,306.264 c-60.844,0-110.167-49.323-110.167-110.167S88.156,85.93,149,85.93c60.843,0,110.167,49.323,110.167,110.167  S209.843,306.264,149,306.264z"/>
-</svg>
+          <!--<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="239px" height="276px" viewBox="0 0 298 345.097" enable-background="new 0 0 298 345.097" xml:space="preserve">-->
+          <!--<path fill="#dedede" d="M264.568,102.055l5.355-5.355c7.717-7.717,9.124-18.938,3.126-24.935c-5.997-5.997-17.217-4.59-24.934,3.127l-5.386,5.385 C221.768,63.292,196.11,51.875,168,48.297v-9.583h7.658c10.914,0,19.843-8.711,19.843-19.357S186.573,0,175.659,0h-53.317  c-10.913,0-19.842,8.711-19.842,19.357s8.929,19.357,19.842,19.357H130v9.583C56.681,57.629,0,120.244,0,196.097  c0,82.291,66.709,149,149,149c82.29,0,149-66.709,149-149C298,160.434,285.465,127.703,264.568,102.055z M149,306.264 c-60.844,0-110.167-49.323-110.167-110.167S88.156,85.93,149,85.93c60.843,0,110.167,49.323,110.167,110.167  S209.843,306.264,149,306.264z"/>-->
+          <!--</svg>-->
         </div>
       </div>
       <div class="effect__text-block">
@@ -179,6 +187,16 @@
             привычные
             серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
         </blockquote>
+        <button class="reviews__prev" type="button"><span class="visually-hidden">Предыдущий отзыв</span>
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
+  <path fill="#e5e5e5" d="M2.045,20.859L21.458,1.446c0.331-0.331,0.331-0.867,0-1.198c-0.33-0.331-0.867-0.331-1.197,0L0.248,20.261 c-0.331,0.33-0.331,0.867,0,1.197l20.013,20.013c0.164,0.165,0.382,0.248,0.599,0.248s0.434-0.083,0.599-0.248 c0.331-0.331,0.331-0.867,0-1.198L2.045,20.859z"/>
+</svg>
+        </button>
+        <button class="reviews__next" type="button"><span class="visually-hidden">Следующий отзыв</span>
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
+  <path fill="#e5e5e5" d="M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012 c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248 c-0.331-0.331-0.331-0.867,0-1.198L19.661,20.859z"/>
+</svg>
+        </button>
       </div>
       <p class="reviews__toggles slider__toggles">
         <button class="slider__toggle slider__toggle--active" type="button"><span class="visually-hidden">1</span>
@@ -302,7 +320,7 @@
       <picture>
         <source media="(min-width: 1200px)" srcset="./img/bg-map-desktop@1x.jpg 1x, ./img/bg-map-desktop@2x.jpg 2x">
         <source media="(min-width: 660px)" srcset="./img/bg-map-tablet@1x.jpg 1x, ./img/bg-map-tablet@2x.jpg 2x">
-        <img src="./img/bg-map-mobile@1x.png" width="100%" height="auto" alt="Карта с адресом">
+        <img src="./img/bg-map-mobile@1x.png" width="100%" height="auto" alt="Карта с адресом" align="bottom">
       </picture>
       <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="61.905px" viewBox="0 0 595.28 61.905" enable-background="new 0 0 595.28 61.905" xml:space="preserve">
   <polygon fill="#ffffff" points="297.64,61.905 0,0 595.28,0 "/>
@@ -312,10 +330,12 @@
 </main>
 <footer class="page-footer page-footer--invisible">
   <div class="page-footer__container container">
-    <picture>
-      <source media="(min-width: 1200px)" srcset="./img/logo-pink-blue-desktop.svg">
-      <img src="./img/logo-pink-blue-mobile.svg" alt="Логотив в футере" width="143" height="auto">
-    </picture>
+    <div class="page-footer__logo">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="./img/logo-pink-blue-desktop.svg">
+        <img src="./img/logo-pink-blue-mobile.svg" alt="Логотив в футере" width="143" height="auto">
+      </picture>
+    </div>
     <div class="page-footer__social social">
       <ul class="social__list list">
         <li class="social__item">
