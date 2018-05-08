@@ -1,3 +1,7 @@
+.main-nav {
+  z-index: 1;
+}
+
 .main-nav__list {
   text-align: center;
   margin-bottom: 0;
@@ -48,5 +52,14 @@
     display: flex;
     justify-content: space-between;
     min-width: 620px;
+  }
+}
+
+.main-nav__item--active {
+  &:hover .main-nav__link {
+    color: white;
+  }
+  @media (min-width: @desktop-size) {
+    border-bottom: 2px solid white;
   }
 }

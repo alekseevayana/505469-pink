@@ -10,7 +10,7 @@
     // Picture element HTML5 shiv
     document.createElement("picture");
   </script>
-  <script src="../picturefill.js" async></script>
+  <script src="picturefill.js" async></script>
 </head>
 <body class="theme">
 <header class="page-header">
@@ -21,14 +21,28 @@
           <picture>
             <source media="(min-width: 1200px)" srcset="./img/logo-pink-white-desktop.svg">
             <source media="(min-width: 660px)" srcset="./img/logo-pink-white-tablet.svg">
-            <img class="page-header__logo-image" src="./img/logo-pink-white-mobile.svg" width="75" height="22"
-                 alt="Приложение Pink">
+            <img class="page-header__logo-image" src="./img/logo-pink-white-mobile.svg" alt="Приложение Pink">
           </picture>
         </a>
-        <a class="page-header__toggle" href="#" aria-label="Закрыть меню"><span
+        <a class="page-header__toggle visually-hidden" href="#" aria-label="Закрыть меню"><span
           class="visually-hidden">Закрыть меню</span>
           <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
   <path fill="#FFFFFF" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
+</svg>
+        </a>
+        <a class="page-header__toggle visually-hidden" href="#" aria-label="Открыть меню"><span
+          class="visually-hidden">Открыть меню</span>
+          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="49.945px" height="24.007px" viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007" xml:space="preserve">
+  <g id="miu">
+    <g id="editor_list_view_hambuger_menu_glyph">
+      <g>
+        <path id="path-1" fill="#FFFFFF" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
+      </g>
+      <g>
+        <path id="path-1_1_" fill="#FFFFFF" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
+      </g>
+    </g>
+  </g>
 </svg>
         </a>
       </div>
@@ -73,14 +87,14 @@
         <ul class="list downloading__list">
           <li class="downloading__item downloading__item--apple">
             <a class="downloading__link list__link" href="https://itunes.apple.com/"><span class="visually-hidden">Apple-logo</span>
-              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="46.21px" height="56.753px" viewBox="0 0 46.21 56.753" enable-background="new 0 0 46.21 56.753" xml:space="preserve">
-  <path fill="#FFFFFF" d="M38.593,30.15c0.081,8.59,7.535,11.447,7.617,11.483c-0.062,0.202-1.19,4.073-3.927,8.072 c-2.365,3.457-4.82,6.901-8.688,6.973c-3.799,0.07-5.021-2.253-9.365-2.253c-4.344,0-5.702,2.182-9.298,2.32 c-3.733,0.142-6.576-3.739-8.961-7.184c-4.875-7.046-8.598-19.91-3.597-28.593c2.484-4.313,6.925-7.043,11.743-7.114 c3.666-0.069,7.126,2.466,9.366,2.466c2.241,0,6.444-3.049,10.865-2.601c1.85,0.077,7.044,0.747,10.38,5.629 C44.459,19.519,38.531,22.971,38.593,30.15 M31.453,9.062C33.435,6.662,34.769,3.323,34.405,0c-2.857,0.115-6.312,1.904-8.36,4.302 c-1.837,2.123-3.445,5.521-3.011,8.778C26.218,13.326,29.47,11.461,31.453,9.062"/>
-</svg>
+              <svg version="1.0" id="apple__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="46.21px" height="56.753px" viewBox="0 0 46.21 56.753" enable-background="new 0 0 46.21 56.753" xml:space="preserve">
+                <path fill="#FFFFFF" d="M38.593,30.15c0.081,8.59,7.535,11.447,7.617,11.483c-0.062,0.202-1.19,4.073-3.927,8.072 c-2.365,3.457-4.82,6.901-8.688,6.973c-3.799,0.07-5.021-2.253-9.365-2.253c-4.344,0-5.702,2.182-9.298,2.32 c-3.733,0.142-6.576-3.739-8.961-7.184c-4.875-7.046-8.598-19.91-3.597-28.593c2.484-4.313,6.925-7.043,11.743-7.114 c3.666-0.069,7.126,2.466,9.366,2.466c2.241,0,6.444-3.049,10.865-2.601c1.85,0.077,7.044,0.747,10.38,5.629 C44.459,19.519,38.531,22.971,38.593,30.15 M31.453,9.062C33.435,6.662,34.769,3.323,34.405,0c-2.857,0.115-6.312,1.904-8.36,4.302 c-1.837,2.123-3.445,5.521-3.011,8.778C26.218,13.326,29.47,11.461,31.453,9.062"/>
+              </svg>
             </a>
           </li>
           <li class="downloading__item downloading__item--android">
             <a class="downloading__link list__link" href="https://play.google.com/"><span class="visually-hidden">Android-logo</span>
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="42.084px" height="47.041px" viewBox="0 0 42.084 47.041" enable-background="new 0 0 42.084 47.041" xml:space="preserve">
+              <svg version="1.1" id="Android__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="42.084px" height="47.041px" viewBox="0 0 42.084 47.041" enable-background="new 0 0 42.084 47.041" xml:space="preserve">
   <path fill="#A4C639" d="M34.144,14.009H7.945c-0.009,0.11-0.018,0.22-0.018,0.333v18.755c0,1.926,1.457,3.49,3.316,3.627v7.43 c0,1.594,1.291,2.885,2.885,2.885c1.593,0,2.885-1.291,2.885-2.885v-7.42h8.058v7.42c0,1.594,1.291,2.885,2.885,2.885 c1.595,0,2.886-1.291,2.886-2.885v-7.434c1.858-0.137,3.315-1.701,3.315-3.627V14.342C34.157,14.229,34.153,14.119,34.144,14.009z"/>
   <path id="c-4-9-2-9-2-9" fill="#A4C639" d="M2.886,15.679L2.886,15.679c1.593,0,2.886,1.292,2.886,2.885v12.378 c0,1.595-1.292,2.886-2.886,2.886l0,0C1.292,33.828,0,32.537,0,30.942V18.564C0,16.97,1.292,15.679,2.886,15.679z"/>
   <path id="c-4-1-7-3-8-4" fill="#A4C639" d="M39.198,15.679L39.198,15.679c1.595,0,2.886,1.292,2.886,2.885v12.378 c0,1.595-1.291,2.886-2.886,2.886l0,0c-1.594,0-2.885-1.291-2.885-2.886V18.564C36.313,16.97,37.604,15.679,39.198,15.679z"/>
@@ -91,7 +105,7 @@
           <li class="downloading__item downloading__item--windows">
             <a class="downloading__link list__link"
                href="https://www.microsoft.com/ru-ru/store/appsvnext/windows-phone"><span class="visually-hidden">Windows-logo</span>
-              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="43.922px" height="41.992px" viewBox="0 0 43.922 41.992" enable-background="new 0 0 43.922 41.992" xml:space="preserve">
+              <svg version="1.0" id="Windows__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="43.922px" height="41.992px" viewBox="0 0 43.922 41.992" enable-background="new 0 0 43.922 41.992" xml:space="preserve">
   <g>
     <path id="path5058" fill="#F05423" d="M20.874,19.953H0V0h20.874V19.953z"/>
     <path id="path5060" fill="#84C441" d="M43.922,19.953H23.049V0h20.873V19.953z"/>
@@ -112,27 +126,28 @@
       предложить!</p>
   </section>
   <section class="advantages">
-    <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="auto" viewBox="0 0 1200 94.074" enable-background="new 0 0 1200 94.074" xml:space="preserve">
-  <polygon fill="#ffffff" points="1200,0 0,0 0,94.074 "/>
-</svg>
+    <div class="advantages__line"></div>
+    <!--<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="auto" viewBox="0 0 1200 94.074" enable-background="new 0 0 1200 94.074" xml:space="preserve">-->
+    <!--<polygon fill="#ffffff" points="1200,0 0,0 0,94.074 "/>-->
+    <!--</svg>-->
     <h2 class="visually-hidden">Наши преимущества</h2>
     <div class="container advantages__container">
       <ul class="advantages__list list">
         <li class="advantages__item">
-          <div class="advantage__image-item"></div>
+          <div class="advantages__image-item"></div>
           <h3 class="advantages__title">Поднимает настроение</h3>
           <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
             несколько кликов!</p>
         </li>
         <li class="advantages__item">
-          <div class="advantage__image-item"></div>
+          <div class="advantages__image-item"></div>
           <h3 class="advantages__title">Меняет мир вокруг
           </h3>
           <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
             усилить эффект</p>
         </li>
         <li class="advantages__item">
-          <div class="advantage__image-item"></div>
+          <div class="advantages__image-item"></div>
           <h3 class="advantages__title">Заводит новых&nbsp;друзей</h3>
           <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
             новых</p>
@@ -188,12 +203,12 @@
             серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
         </blockquote>
         <button class="reviews__prev" type="button"><span class="visually-hidden">Предыдущий отзыв</span>
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
+          <svg version="1.1" id="prev" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
   <path fill="#e5e5e5" d="M2.045,20.859L21.458,1.446c0.331-0.331,0.331-0.867,0-1.198c-0.33-0.331-0.867-0.331-1.197,0L0.248,20.261 c-0.331,0.33-0.331,0.867,0,1.197l20.013,20.013c0.164,0.165,0.382,0.248,0.599,0.248s0.434-0.083,0.599-0.248 c0.331-0.331,0.331-0.867,0-1.198L2.045,20.859z"/>
 </svg>
         </button>
         <button class="reviews__next" type="button"><span class="visually-hidden">Следующий отзыв</span>
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
+          <svg version="1.1" id="next" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
   <path fill="#e5e5e5" d="M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012 c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248 c-0.331-0.331-0.331-0.867,0-1.198L19.661,20.859z"/>
 </svg>
         </button>
@@ -209,9 +224,6 @@
     </div>
   </section>
   <section class="rates slider">
-    <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="94.074px" viewBox="0 0 1200 94.074" enable-background="new 0 0 1200 94.074" xml:space="preserve">
-  <polygon fill="#ffffff" points="1200,0 0,0 0,94.074 "/>
-</svg>
     <h2 class="visually-hidden">Цены</h2>
     <table class="rates__table">
       <thead class="rates__head-row">
@@ -220,7 +232,7 @@
         <td class="rates__head-item">База
           <p class="rates__value">1,99 Usd</p></td>
         <td class="rates__head-item">
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="61px" height="61px" viewBox="0 6 61 61" enable-background="new 0 6 61 61" xml:space="preserve">
+          <svg version="1.1" id="hit_label" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="61px" height="61px" viewBox="0 6 61 61" enable-background="new 0 6 61 61" xml:space="preserve">
   <polygon fill="#D22856" points="18.975,6 0,25.062 0,67 61.09,6 "/>
 </svg>
           <span class="rates__stock">Хит</span>
@@ -251,7 +263,7 @@
         </td>
       </tr>
       <tr class="rates__row">
-        <td class="rates__first-column price__data price__data--checked">Смайлики</td>
+        <td class="rates__first-column rates__data rates__data--checked">Смайлики</td>
         <td class="rates__data-no">
           <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
   <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
@@ -269,7 +281,7 @@
         </td>
       </tr>
       <tr class="rates__row">
-        <td class="price__data price__data--not-included rates__first-column">Комментарии</td>
+        <td class="rates__data rates__data--not-included rates__first-column">Комментарии</td>
         <td class="rates__data-no">
           <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
   <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
@@ -317,14 +329,12 @@
       </ul>
     </div>
     <div class="contacts__map">
-      <picture>
-        <source media="(min-width: 1200px)" srcset="./img/bg-map-desktop@1x.jpg 1x, ./img/bg-map-desktop@2x.jpg 2x">
-        <source media="(min-width: 660px)" srcset="./img/bg-map-tablet@1x.jpg 1x, ./img/bg-map-tablet@2x.jpg 2x">
-        <img src="./img/bg-map-mobile@1x.png" width="100%" height="auto" alt="Карта с адресом" align="bottom">
-      </picture>
-      <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="61.905px" viewBox="0 0 595.28 61.905" enable-background="new 0 0 595.28 61.905" xml:space="preserve">
-  <polygon fill="#ffffff" points="297.64,61.905 0,0 595.28,0 "/>
-</svg>
+      <div class="contacts__map-marker"></div>
+      <!--<picture>-->
+        <!--<source media="(min-width: 1200px)" srcset="./img/bg-map-desktop@1x.jpg 1x, ./img/bg-map-desktop@2x.jpg 2x">-->
+        <!--<source media="(min-width: 660px)" srcset="./img/bg-map-tablet@1x.jpg 1x">-->
+        <!--<img src="./img/bg-map-mobile@1x.png" alt="Карта с адресом" width="100%" height="auto">-->
+      <!--</picture>-->
     </div>
   </section>
 </main>
@@ -333,7 +343,7 @@
     <div class="page-footer__logo">
       <picture>
         <source media="(min-width: 1200px)" srcset="./img/logo-pink-blue-desktop.svg">
-        <img src="./img/logo-pink-blue-mobile.svg" alt="Логотив в футере" width="143" height="auto">
+        <img src="./img/logo-pink-blue-mobile.svg" alt="Логотив в футере">
       </picture>
     </div>
     <div class="page-footer__social social">
