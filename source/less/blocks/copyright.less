@@ -17,8 +17,26 @@
 .copyright__link {
   width: 26.943px;
   height: 34.09px;
+  position: relative;
+  color: @base-pink;
+
+  &:hover,
+  &:focus {
+    color: @base-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
-.copyright__link path {
-  fill: @base-pink;
+.copyright__link::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
 }

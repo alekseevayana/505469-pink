@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Формы</title>
   <link rel="stylesheet" href="css/style.css">
@@ -11,39 +11,35 @@
     document.createElement("picture");
   </script>
   <script src="picturefill.js" async></script>
+  <script src="svg4everybody.js"></script>
 </head>
 <body class="theme">
 <header class="page-header">
   <div class="page-header__wrapper">
     <div class="page-header__title">
       <div class="container page-header__container">
-        <a class="page-header__logo" href="./index.html">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="./img/logo-pink-white-desktop.svg">
-            <source media="(min-width: 660px)" srcset="./img/logo-pink-white-tablet.svg" sizes="100%">
-            <img class="page-header__logo-image" src="./img/logo-pink-white-mobile.svg" alt="Приложение Pink">
-          </picture>
+        <a class="page-header__logo page-header__logo--atr">
+          <svg class="page-header__logo-icon  page-header__logo-icon--mobile" width="74" height="23">
+            <use xlink:href="./img/logo-pink-white-mobile.svg#logo-pink-white-mobile"></use>
+          </svg>
+          <svg class="page-header__logo-icon  page-header__logo-icon--tablet" width="151" height="41">
+            <use xlink:href="./img/logo-pink-white-tablet.svg#logo-pink-white-tablet"></use>
+          </svg>
+          <svg class="page-header__logo-icon  page-header__logo-icon--desktop" width="147" height="41">
+            <use xlink:href="./img/logo-pink-white-desktop.svg#logo-pink-white-desktop"></use>
+          </svg>
         </a>
         <a class="page-header__toggle visually-hidden" href="#" aria-label="Закрыть меню"><span
           class="visually-hidden">Закрыть меню</span>
-          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
-  <path fill="#FFFFFF" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
-</svg>
+          <svg width="23" height="24">
+            <use xlink:href="./img/icon-menu-cross.svg#menu-cross"></use>
+          </svg>
         </a>
         <a class="page-header__toggle visually-hidden" href="#" aria-label="Открыть меню"><span
           class="visually-hidden">Открыть меню</span>
-          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="49.945px" height="24.007px" viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007" xml:space="preserve">
-  <g id="miu">
-    <g id="editor_list_view_hambuger_menu_glyph">
-      <g>
-        <path id="path-1" fill="#FFFFFF" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
-      </g>
-      <g>
-        <path id="path-1_1_" fill="#FFFFFF" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
-      </g>
-    </g>
-  </g>
-</svg>
+          <svg width="23" height="24">
+            <use xlink:href="./img/icon-menu-burger.svg#menu-burger"></use>
+          </svg>
         </a>
       </div>
     </div>
@@ -206,12 +202,14 @@
 </main>
 <footer class="page-footer">
   <div class="page-footer__container container">
-    <div class="page-footer__logo">
-      <picture>
-        <source media="(min-width: 1200px)" srcset="./img/logo-pink-blue-desktop.svg">
-        <img src="./img/logo-pink-blue-mobile.svg" alt="Логотив в футере" width="143" height="auto">
-      </picture>
-    </div>
+    <a class="page-footer__logo page-footer__logo--atrubut" href="index.html">
+      <svg class="page-footer__logo-mobile">
+        <use xlink:href="./img/logo-pink-blue-mobile.svg#logo-pink-footer" width="148" height="41"></use>
+      </svg>
+      <svg class="page-footer__logo-desktop">
+        <use xlink:href="./img/logo-pink-blue-desktop.svg#logo-pink-footer-desktop" width="148" height="41"></use>
+      </svg>
+    </a>
     <div class="page-footer__social social">
       <ul class="social__list list">
         <li class="social__item">
@@ -244,9 +242,9 @@
     <div class="page-footer__copyright copyright">
       <span class="copyright__text theme__text">Разработано</span>
       <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
-        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
-  <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z"/>
-</svg>
+        <svg width="27" height="35">
+          <use xlink:href="./img/logo-htmlacademy.svg#logo-htmlacademy" width="27" height="35"></use>
+        </svg>
       </a>
     </div>
   </div>
@@ -270,5 +268,6 @@
     <button class="popup__button button button--form">Закрыть окно</button>
   </div>
 </div>
+<script>svg4everybody();</script>
 </body>
 </html>

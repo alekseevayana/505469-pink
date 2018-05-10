@@ -11,39 +11,35 @@
     document.createElement("picture");
   </script>
   <script src="picturefill.js" async></script>
+  <script src="svg4everybody.js"></script>
 </head>
 <body class="theme">
 <header class="page-header">
   <div class="page-header__wrapper">
     <div class="page-header__title">
       <div class="container page-header__container">
-        <a class="page-header__logo">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="./img/logo-pink-white-desktop.svg">
-            <source media="(min-width: 660px)" srcset="./img/logo-pink-white-tablet.svg">
-            <img class="page-header__logo-image" src="./img/logo-pink-white-mobile.svg" alt="Приложение Pink">
-          </picture>
+        <a class="page-header__logo page-header__logo--atr">
+          <svg class="page-header__logo-icon  page-header__logo-icon--mobile" width="74" height="23">
+            <use xlink:href="./img/logo-pink-white-mobile.svg#logo-pink-white-mobile"></use>
+          </svg>
+          <svg class="page-header__logo-icon  page-header__logo-icon--tablet" width="151" height="41">
+            <use xlink:href="./img/logo-pink-white-tablet.svg#logo-pink-white-tablet"></use>
+          </svg>
+          <svg class="page-header__logo-icon  page-header__logo-icon--desktop" width="147" height="41">
+            <use xlink:href="./img/logo-pink-white-desktop.svg#logo-pink-white-desktop"></use>
+          </svg>
         </a>
         <a class="page-header__toggle visually-hidden" href="#" aria-label="Закрыть меню"><span
           class="visually-hidden">Закрыть меню</span>
-          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
-  <path fill="#FFFFFF" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
-</svg>
+          <svg width="23" height="24">
+            <use xlink:href="./img/icon-menu-cross.svg#menu-cross"></use>
+          </svg>
         </a>
         <a class="page-header__toggle visually-hidden" href="#" aria-label="Открыть меню"><span
           class="visually-hidden">Открыть меню</span>
-          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="49.945px" height="24.007px" viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007" xml:space="preserve">
-  <g id="miu">
-    <g id="editor_list_view_hambuger_menu_glyph">
-      <g>
-        <path id="path-1" fill="#FFFFFF" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
-      </g>
-      <g>
-        <path id="path-1_1_" fill="#FFFFFF" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
-      </g>
-    </g>
-  </g>
-</svg>
+          <svg width="23" height="24">
+            <use xlink:href="./img/icon-menu-burger.svg#menu-burger"></use>
+          </svg>
         </a>
       </div>
     </div>
@@ -87,32 +83,24 @@
         <ul class="list downloading__list">
           <li class="downloading__item downloading__item--apple">
             <a class="downloading__link list__link" href="https://itunes.apple.com/"><span class="visually-hidden">Apple-logo</span>
-              <svg version="1.0" id="apple__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="46.21px" height="56.753px" viewBox="0 0 46.21 56.753" enable-background="new 0 0 46.21 56.753" xml:space="preserve">
-                <path fill="#FFFFFF" d="M38.593,30.15c0.081,8.59,7.535,11.447,7.617,11.483c-0.062,0.202-1.19,4.073-3.927,8.072 c-2.365,3.457-4.82,6.901-8.688,6.973c-3.799,0.07-5.021-2.253-9.365-2.253c-4.344,0-5.702,2.182-9.298,2.32 c-3.733,0.142-6.576-3.739-8.961-7.184c-4.875-7.046-8.598-19.91-3.597-28.593c2.484-4.313,6.925-7.043,11.743-7.114 c3.666-0.069,7.126,2.466,9.366,2.466c2.241,0,6.444-3.049,10.865-2.601c1.85,0.077,7.044,0.747,10.38,5.629 C44.459,19.519,38.531,22.971,38.593,30.15 M31.453,9.062C33.435,6.662,34.769,3.323,34.405,0c-2.857,0.115-6.312,1.904-8.36,4.302 c-1.837,2.123-3.445,5.521-3.011,8.778C26.218,13.326,29.47,11.461,31.453,9.062"/>
+              <svg width="46" height="57">
+                <use xlink:href="./img/logo-apple.svg#logo-apple"></use>
               </svg>
             </a>
           </li>
           <li class="downloading__item downloading__item--android">
             <a class="downloading__link list__link" href="https://play.google.com/"><span class="visually-hidden">Android-logo</span>
-              <svg version="1.1" id="Android__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="42.084px" height="47.041px" viewBox="0 0 42.084 47.041" enable-background="new 0 0 42.084 47.041" xml:space="preserve">
-  <path fill="#A4C639" d="M34.144,14.009H7.945c-0.009,0.11-0.018,0.22-0.018,0.333v18.755c0,1.926,1.457,3.49,3.316,3.627v7.43 c0,1.594,1.291,2.885,2.885,2.885c1.593,0,2.885-1.291,2.885-2.885v-7.42h8.058v7.42c0,1.594,1.291,2.885,2.885,2.885 c1.595,0,2.886-1.291,2.886-2.885v-7.434c1.858-0.137,3.315-1.701,3.315-3.627V14.342C34.157,14.229,34.153,14.119,34.144,14.009z"/>
-  <path id="c-4-9-2-9-2-9" fill="#A4C639" d="M2.886,15.679L2.886,15.679c1.593,0,2.886,1.292,2.886,2.885v12.378 c0,1.595-1.292,2.886-2.886,2.886l0,0C1.292,33.828,0,32.537,0,30.942V18.564C0,16.97,1.292,15.679,2.886,15.679z"/>
-  <path id="c-4-1-7-3-8-4" fill="#A4C639" d="M39.198,15.679L39.198,15.679c1.595,0,2.886,1.292,2.886,2.885v12.378 c0,1.595-1.291,2.886-2.886,2.886l0,0c-1.594,0-2.885-1.291-2.885-2.886V18.564C36.313,16.97,37.604,15.679,39.198,15.679z"/>
-  <path fill="#A4C639" d="M8.03,11.967h26.026c-0.039-2.783-1.234-5.322-3.187-7.275l2.446-4.235c0.082-0.146,0.031-0.331-0.112-0.415 c-0.146-0.084-0.331-0.034-0.415,0.111L30.416,4.26c-2.052-1.853-6.249-3.4-9.374-3.4l0,0c-3.016,0-7.322,1.547-9.374,3.4 L9.296,0.152C9.213,0.007,9.027-0.042,8.881,0.041C8.736,0.125,8.686,0.311,8.77,0.456l2.445,4.235 C9.265,6.645,8.068,9.184,8.03,11.967z M25.323,6.804c-0.002-0.805,0.664-1.46,1.488-1.462c0.826-0.002,1.494,0.648,1.498,1.454 c0,0.002,0,0.005,0,0.008c0.002,0.805-0.664,1.46-1.49,1.462c-0.823,0.002-1.493-0.649-1.496-1.454 C25.323,6.81,25.323,6.807,25.323,6.804z M14.18,6.804c-0.001-0.805,0.665-1.46,1.489-1.462c0.824-0.002,1.494,0.648,1.497,1.454 c0,0.002,0,0.005,0,0.008c0.002,0.805-0.664,1.46-1.488,1.462c-0.825,0.002-1.495-0.649-1.498-1.454 C14.18,6.81,14.18,6.807,14.18,6.804z"/>
-</svg>
+              <svg class="downloading__icon-android" width="46" height="57">
+                <use xlink:href="./img/logo-android.svg#logo-android"></use>
+              </svg>
             </a>
           </li>
           <li class="downloading__item downloading__item--windows">
             <a class="downloading__link list__link"
                href="https://www.microsoft.com/ru-ru/store/appsvnext/windows-phone"><span class="visually-hidden">Windows-logo</span>
-              <svg version="1.0" id="Windows__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="43.922px" height="41.992px" viewBox="0 0 43.922 41.992" enable-background="new 0 0 43.922 41.992" xml:space="preserve">
-  <g>
-    <path id="path5058" fill="#F05423" d="M20.874,19.953H0V0h20.874V19.953z"/>
-    <path id="path5060" fill="#84C441" d="M43.922,19.953H23.049V0h20.873V19.953z"/>
-    <path id="path5062" fill="#2DABE2" d="M20.873,41.992H0V22.04h20.873V41.992z"/>
-    <path id="path5064" fill="#F9BC15" d="M43.922,41.992H23.049V22.04h20.873V41.992z"/>
-  </g>
-</svg>
+              <svg class="downloading__icon-windows" width="46" height="57">
+                <use xlink:href="./img/logo-microsoft.svg#logo-windows"></use>
+              </svg>
             </a>
           </li>
         </ul>
@@ -127,9 +115,6 @@
   </section>
   <section class="advantages">
     <div class="advantages__line"></div>
-    <!--<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="auto" viewBox="0 0 1200 94.074" enable-background="new 0 0 1200 94.074" xml:space="preserve">-->
-    <!--<polygon fill="#ffffff" points="1200,0 0,0 0,94.074 "/>-->
-    <!--</svg>-->
     <h2 class="visually-hidden">Наши преимущества</h2>
     <div class="container advantages__container">
       <ul class="advantages__list list">
@@ -160,11 +145,7 @@
   <section class="effect">
     <div class="effect__container container">
       <div class="effect__image">
-        <div class="effect__image-container">
-          <!--<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="239px" height="276px" viewBox="0 0 298 345.097" enable-background="new 0 0 298 345.097" xml:space="preserve">-->
-          <!--<path fill="#dedede" d="M264.568,102.055l5.355-5.355c7.717-7.717,9.124-18.938,3.126-24.935c-5.997-5.997-17.217-4.59-24.934,3.127l-5.386,5.385 C221.768,63.292,196.11,51.875,168,48.297v-9.583h7.658c10.914,0,19.843-8.711,19.843-19.357S186.573,0,175.659,0h-53.317  c-10.913,0-19.842,8.711-19.842,19.357s8.929,19.357,19.842,19.357H130v9.583C56.681,57.629,0,120.244,0,196.097  c0,82.291,66.709,149,149,149c82.29,0,149-66.709,149-149C298,160.434,285.465,127.703,264.568,102.055z M149,306.264 c-60.844,0-110.167-49.323-110.167-110.167S88.156,85.93,149,85.93c60.843,0,110.167,49.323,110.167,110.167  S209.843,306.264,149,306.264z"/>-->
-          <!--</svg>-->
-        </div>
+        <div class="effect__image-container"></div>
       </div>
       <div class="effect__text-block">
         <h3 class="effect__title">Эффект
@@ -247,55 +228,37 @@
       <tr class="rates__row">
         <td class="rates__first-column rates__data">Розовый фильтр</td>
         <td class="rates__data-yes">
-          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.698px" height="21.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-  <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
-</svg>
+          <img src="./img/icon-yes.svg" alt="" width="32" height="21">
         </td>
         <td class="rates__data-yes">
-          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.698px" height="21.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-  <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
-</svg>
+          <img src="./img/icon-yes.svg" alt="" width="32" height="21">
         </td>
         <td class="rates__data-yes">
-          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.698px" height="21.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-  <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
-</svg>
+          <img src="./img/icon-yes.svg" alt="" width="32" height="21">
         </td>
       </tr>
       <tr class="rates__row">
         <td class="rates__first-column rates__data rates__data--checked">Смайлики</td>
         <td class="rates__data-no">
-          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
-  <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
-</svg>
+          <img src="./img/icon-no.svg" alt="" width="27" height="27">
         </td>
         <td class="rates__data-yes">
-          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.698px" height="21.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-  <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
-</svg>
+          <img src="./img/icon-yes.svg" alt="" width="32" height="21">
         </td>
         <td class="rates__data-yes">
-          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.698px" height="21.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-  <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
-</svg>
+          <img src="./img/icon-yes.svg" alt="" width="32" height="21">
         </td>
       </tr>
       <tr class="rates__row">
         <td class="rates__data rates__data--not-included rates__first-column">Комментарии</td>
         <td class="rates__data-no">
-          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
-  <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
-</svg>
+          <img src="./img/icon-no.svg" alt="" width="27" height="27">
         </td>
         <td class="rates__data-no">
-          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
-  <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
-</svg>
+          <img src="./img/icon-no.svg" alt="" width="27" height="27">
         </td>
         <td class="rates__data-yes">
-          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.698px" height="21.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-  <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
-</svg>
+          <img src="./img/icon-yes.svg" alt="" width="32" height="21">
         </td>
       </tr>
       </tbody>
@@ -330,47 +293,34 @@
     </div>
     <div class="contacts__map">
       <div class="contacts__map-marker"></div>
-      <!--<picture>-->
-        <!--<source media="(min-width: 1200px)" srcset="./img/bg-map-desktop@1x.jpg 1x, ./img/bg-map-desktop@2x.jpg 2x">-->
-        <!--<source media="(min-width: 660px)" srcset="./img/bg-map-tablet@1x.jpg 1x">-->
-        <!--<img src="./img/bg-map-mobile@1x.png" alt="Карта с адресом" width="100%" height="auto">-->
-      <!--</picture>-->
     </div>
   </section>
 </main>
 <footer class="page-footer page-footer--invisible">
   <div class="page-footer__container container">
-    <div class="page-footer__logo">
-      <picture>
-        <source media="(min-width: 1200px)" srcset="./img/logo-pink-blue-desktop.svg">
-        <img src="./img/logo-pink-blue-mobile.svg" alt="Логотив в футере">
-      </picture>
-    </div>
+    <a class="page-footer__logo page-footer__logo--atrubut">
+      <svg class="page-footer__logo-mobile">
+        <use xlink:href="./img/logo-pink-blue-mobile.svg#logo-pink-footer" width="148" height="41"></use>
+      </svg>
+      <svg class="page-footer__logo-desktop">
+        <use xlink:href="./img/logo-pink-blue-desktop.svg#logo-pink-footer-desktop" width="148" height="41"></use>
+      </svg>
+    </a>
     <div class="page-footer__social social">
       <ul class="social__list list">
         <li class="social__item">
           <a href="" class="social__link social__link--twitter"><span class="visually-hidden">Twitter</span>
-            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
-  <g id="W6EeEF_1_">
-    <g>
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.485,3.074,0.263,3.685,1.151 c0.694-0.226,1.372-0.47,2.072-0.691c-0.004,0.841-0.538,1.478-0.883,1.727C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.976-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.32,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.654,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.787,11.283,0.153z"/>
-    </g>
-  </g>
-</svg>
+            <img src="./img/icon-twitter.svg" alt="Twitter" width="17.5" height="14.663">
           </a>
         </li>
         <li class="social__item">
           <a href="" class="social__link social__link--facebook"><span class="visually-hidden">Facebook</span>
-            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
-  <path d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z"/>
-</svg>
+            <img src="./img/icon-facebook.svg" alt="Facebook" width="8.673" height="18.944">
           </a>
         </li>
         <li class="social__item">
           <a href="" class="social__link social__link--youtube"><span class="visually-hidden">Youtube</span>
-            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.64px" height="13.96px" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
-  <path d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z"/>
-</svg>
+            <img src="./img/icon-youtube.svg" alt="Youtube" width="14.64" height="13.96">
           </a>
         </li>
       </ul>
@@ -378,12 +328,13 @@
     <div class="page-footer__copyright copyright">
       <span class="copyright__text theme__text">Разработано</span>
       <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
-        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
-  <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z"/>
-</svg>
+        <svg width="27" height="35">
+         <use xlink:href="./img/logo-htmlacademy.svg#logo-htmlacademy" width="27" height="35"></use>
+       </svg>
       </a>
     </div>
   </div>
 </footer>
+<script>svg4everybody();</script>
 </body>
 </html>

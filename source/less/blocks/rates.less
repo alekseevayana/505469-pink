@@ -3,7 +3,7 @@
   background-image: linear-gradient(174deg, #ffffff 0%, #ffffff 76px, #f2f2f2 76px);
   padding-right: 20px;
   padding-left: 20px;
-  padding-bottom: 44px;
+  padding-bottom: 50px;
   padding-top: 133px;
   position: relative;
   overflow: hidden;
@@ -24,13 +24,9 @@
 
 .rates > svg {
   position: absolute;
-  top: 0px;
+  top: 0;
   left: 0;
   height: auto;
-
-  @media (min-width: @tablet-size) {
-
-  }
 }
 
 .rates__table {
@@ -46,6 +42,7 @@
     max-width: 620px;
     margin-right: auto;
     margin-left: auto;
+    text-transform: none;
   }
 
   @media (min-width: @desktop-size) {
@@ -94,17 +91,6 @@
   @media (min-width: @desktop-size) {
     padding-top: 15px;
     padding-bottom: 22px;
-  }
-}
-
-.rates__head-row td:nth-child(2),
-.rates__head-row td:nth-child(4),
-.rates__row td:nth-child(2),
-.rates__row td:nth-child(4) {
-
-
-  @media (min-width: @tablet-size) {
-
   }
 }
 
@@ -159,7 +145,6 @@
   @media (min-width: @desktop-size) {
     font-size: 18px;
   }
-
 }
 
 .rates__head-item:nth-child(2),
