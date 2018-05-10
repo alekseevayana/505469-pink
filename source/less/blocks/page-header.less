@@ -89,6 +89,26 @@
   width: 23.867px;
   height: 23.867px;
   align-self: flex-end;
+
+  &:hover,
+  &:focus {
+    color: @base-pink;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-header__toggle::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .page-header__title {
