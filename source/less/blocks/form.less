@@ -101,14 +101,6 @@
   text-transform: uppercase;
   text-align: center;
   margin: 0 auto;
-
-  @media (min-width: @tablet-size) {
-    margin-right: 25px;
-  }
-
-  @media (min-width: @desktop-size) {
-    margin-right: 0;
-  }
 }
 
 .form__input-indents {
@@ -444,6 +436,11 @@
     margin-left: 0;
     margin-right: auto;
     padding-left: 20px;
+
+    @media (min-width: @desktop-size) {
+      margin-right: auto;
+      display: flex;
+    }
   }
 }
 

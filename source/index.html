@@ -10,8 +10,8 @@
     // Picture element HTML5 shiv
     document.createElement("picture");
   </script>
-  <script src="picturefill.js" async></script>
-  <script src="svg4everybody.js"></script>
+  <script src="js/picturefill.js" async></script>
+  <script src="js/svg4everybody.js"></script>
 </head>
 <body class="theme">
 <header class="page-header">
@@ -206,63 +206,65 @@
   </section>
   <section class="rates slider">
     <h2 class="visually-hidden">Цены</h2>
-    <table class="rates__table">
-      <thead class="rates__head-row">
-      <tr>
-        <td></td>
-        <td class="rates__head-item">База
-          <p class="rates__value">1,99 Usd</p></td>
-        <td class="rates__head-item">
-          <svg version="1.1" id="hit_label" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="61px" height="61px" viewBox="0 6 61 61" enable-background="new 0 6 61 61" xml:space="preserve">
+    <div class="rates__container">
+      <table class="rates__table">
+        <thead class="rates__head-row">
+        <tr>
+          <td></td>
+          <td class="rates__head-item">База
+            <p class="rates__value">1,99 Usd</p></td>
+          <td class="rates__head-item">
+            <svg version="1.1" id="hit_label" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 6 61 61" enable-background="new 0 6 61 61" xml:space="preserve">
   <polygon fill="#D22856" points="18.975,6 0,25.062 0,67 61.09,6 "/>
 </svg>
-          <span class="rates__stock">Хит</span>
-          Стандарт
-          <p class="rates__value">3,99 Usd</p>
-        </td>
-        <td class="rates__head-item">Анлим
-          <p class="rates__value">9,99 Usd</p></td>
-      </tr>
-      </thead>
-      <tbody class="rates__table-body">
-      <tr class="rates__row">
-        <td class="rates__first-column rates__data">Розовый фильтр</td>
-        <td class="rates__data-yes">
-          <img src="./img/icon-yes.svg" alt="" width="32" height="21">
-        </td>
-        <td class="rates__data-yes">
-          <img src="./img/icon-yes.svg" alt="" width="32" height="21">
-        </td>
-        <td class="rates__data-yes">
-          <img src="./img/icon-yes.svg" alt="" width="32" height="21">
-        </td>
-      </tr>
-      <tr class="rates__row">
-        <td class="rates__first-column rates__data rates__data--checked">Смайлики</td>
-        <td class="rates__data-no">
-          <img src="./img/icon-no.svg" alt="" width="27" height="27">
-        </td>
-        <td class="rates__data-yes">
-          <img src="./img/icon-yes.svg" alt="" width="32" height="21">
-        </td>
-        <td class="rates__data-yes">
-          <img src="./img/icon-yes.svg" alt="" width="32" height="21">
-        </td>
-      </tr>
-      <tr class="rates__row">
-        <td class="rates__data rates__data--not-included rates__first-column">Комментарии</td>
-        <td class="rates__data-no">
-          <img src="./img/icon-no.svg" alt="" width="27" height="27">
-        </td>
-        <td class="rates__data-no">
-          <img src="./img/icon-no.svg" alt="" width="27" height="27">
-        </td>
-        <td class="rates__data-yes">
-          <img src="./img/icon-yes.svg" alt="" width="32" height="21">
-        </td>
-      </tr>
-      </tbody>
-    </table>
+            <span class="rates__stock">Хит</span>
+            Стандарт
+            <p class="rates__value">3,99 Usd</p>
+          </td>
+          <td class="rates__head-item">Анлим
+            <p class="rates__value">9,99 Usd</p></td>
+        </tr>
+        </thead>
+        <tbody class="rates__table-body">
+        <tr class="rates__row">
+          <td class="rates__first-column rates__data">Розовый фильтр</td>
+          <td class="rates__data-yes">
+            <img src="./img/icon-yes.svg" alt="Входит в стоимость" width="32" height="21">
+          </td>
+          <td class="rates__data-yes">
+            <img src="./img/icon-yes.svg" alt="Входит в стоимость" width="32" height="21">
+          </td>
+          <td class="rates__data-yes">
+            <img src="./img/icon-yes.svg" alt="Входит в стоимость" width="32" height="21">
+          </td>
+        </tr>
+        <tr class="rates__row">
+          <td class="rates__first-column rates__data rates__data--checked">Смайлики</td>
+          <td class="rates__data-no">
+            <img src="./img/icon-no.svg" alt="Не входит в стоимость" width="27" height="27">
+          </td>
+          <td class="rates__data-yes">
+            <img src="./img/icon-yes.svg" alt="Входит в стоимость" width="32" height="21">
+          </td>
+          <td class="rates__data-yes">
+            <img src="./img/icon-yes.svg" alt="Входит в стоимость" width="32" height="21">
+          </td>
+        </tr>
+        <tr class="rates__row">
+          <td class="rates__data rates__data--not-included rates__first-column">Комментарии</td>
+          <td class="rates__data-no">
+            <img src="./img/icon-no.svg" alt="Не входит в стоимость" width="27" height="27">
+          </td>
+          <td class="rates__data-no">
+            <img src="./img/icon-no.svg" alt="Не входит в стоимость" width="27" height="27">
+          </td>
+          <td class="rates__data-yes">
+            <img src="./img/icon-yes.svg" alt="Входит в стоимость" width="32" height="21">
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
     <p class="slider__toggles slider__toggles--rates">
       <button class="slider__toggle" type="button"><span class="visually-hidden">1</span></button>
       <button class="slider__toggle slider__toggle--active" type="button"><span class="visually-hidden">2</span>
@@ -292,7 +294,9 @@
       </ul>
     </div>
     <div class="contacts__map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.7204093648318!2d30.321409600026!3d59.93678143028582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sdk!4v1525949263122" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.7204093648318!2d30.321409600026!3d59.93678143028582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sdk!4v1525949263122"
+        width="600" height="450" style="border:0" allowfullscreen></iframe>
       <div class="contacts__map-marker"></div>
     </div>
   </section>
@@ -330,8 +334,8 @@
       <span class="copyright__text theme__text">Разработано</span>
       <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
         <svg width="27" height="35">
-         <use xlink:href="./img/logo-htmlacademy.svg#logo-htmlacademy" width="27" height="35"></use>
-       </svg>
+          <use xlink:href="./img/logo-htmlacademy.svg#logo-htmlacademy" width="27" height="35"></use>
+        </svg>
       </a>
     </div>
   </div>

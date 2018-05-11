@@ -3,11 +3,9 @@
   background-image: linear-gradient(174deg, #ffffff 0%, #ffffff 76px, #f2f2f2 76px);
   padding-right: 20px;
   padding-left: 20px;
-  padding-bottom: 50px;
-  padding-top: 133px;
+  padding-bottom: 46px;
+  padding-top: 136px;
   position: relative;
-  overflow: hidden;
-  overflow-x: auto;
 
   @media (min-width: @tablet-size) {
     padding-bottom: 67px;
@@ -22,11 +20,22 @@
   }
 }
 
-.rates > svg {
+.rates__container {
+  overflow: hidden;
+  overflow-x: auto;
+}
+
+.rates__head-item svg {
   position: absolute;
   top: 0;
   left: 0;
-  height: auto;
+  width: 72px;
+  height: 72px;
+
+  @media (min-width: @tablet-size) {
+    width: 61px;
+    height: 61px;
+  }
 }
 
 .rates__table {
@@ -59,7 +68,7 @@
   min-width: 280px;
 
   @media (min-width: @tablet-size) {
-    min-width: 157px;
+    min-width: 155px;
   }
 
   @media (min-width: @desktop-size) {
@@ -80,18 +89,40 @@
 }
 
 .rates__head-row td {
-  padding-top: 12px;
-  padding-bottom: 24px;
+  padding-top: 17px;
+  padding-bottom: 21px;
   text-transform: uppercase;
 
   @media (min-width: @tablet-size) {
     padding-bottom: 6px;
+    padding-top: 13px;
   }
 
   @media (min-width: @desktop-size) {
     padding-top: 15px;
     padding-bottom: 22px;
   }
+}
+
+.rates__data-yes img {
+  transform: translateY(14px);
+
+  @media (min-width: @tablet-size) {
+    transform: translateY(5px);
+  }
+}
+
+.rates__data-no img {
+  transform: translateY(11px);
+
+  @media (min-width: @tablet-size) {
+    transform: translateY(3px);
+  }
+}
+
+.rates__head-row td:nth-child(3) {
+  border-right: 2px solid white;
+  border-left: 2px solid white;
 }
 
 .rates__row td {
@@ -152,18 +183,22 @@
   border-right: 2px solid white;
 }
 
-.rates__head-item svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
 .rates__head-item .rates__stock {
   position: absolute;
   font-size: 14px;
   transform: rotate(315deg);
-  top: 2px;
-  left: 6px;
+  top: 11px;
+  left: 9px;
+
+  @media (min-width: @tablet-size) {
+    top: 5px;
+    left: 7px;
+  }
+
+  @media (min-width: @desktop-size) {
+    top: 10px;
+    left: 9px;
+  }
 }
 
 .rates__value {
@@ -178,13 +213,5 @@
   @media (min-width: @desktop-size) {
     font-size: 24px;
   }
-}
-
-.rates__data-yes path {
-  fill: #3dc644;
-}
-
-.rates__data-no {
-  fill: #f25b26;
 }
 

@@ -12,6 +12,7 @@
   width: 100%;
   box-sizing: border-box;
   cursor: pointer;
+  box-shadow: none;
 }
 
 .button--download {
@@ -24,7 +25,7 @@
   }
 
   &:active {
-    opacity: 0.3;
+    color: rgba(210, 40, 86, 0.3);
   }
 
   @media (min-width: @desktop-size) {
@@ -84,7 +85,7 @@
   text-transform: uppercase;
   color: white;
   background-color: #2aab6d;
-  border-color: #2aab6d;
+  border: 2px solid #2aab6d;
   line-height: 30px;
   border-radius: 5px;
 
