@@ -43,6 +43,7 @@
     "node": "8.11"
   },
   "dependencies": {
+    "gulp-imagemin": "^4.1.0",
     "gulp-wait": "0.0.2",
     "normalize.css": "^8.0.0"
   }
