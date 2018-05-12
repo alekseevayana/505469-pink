@@ -12,7 +12,8 @@
 
   @media (min-width: @desktop-size) {
     padding-bottom: 8px;
-    padding-right: 0;
+    padding-right: 6px;
+    padding-left: 0;
   }
 }
 
@@ -21,11 +22,11 @@
   width: 220px;
 
   @media (min-width: @tablet-size) {
-      width: auto;
-      padding-left: 37px;
-      padding-right: 37px;
-      margin-bottom: 48px;
-    }
+    width: auto;
+    padding-left: 37px;
+    padding-right: 37px;
+    margin-bottom: 48px;
+  }
 }
 
 .checkboxes__list {
@@ -35,6 +36,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-left: 60px;
   }
 }
 
@@ -73,14 +75,15 @@
     &:nth-child(5) {
       order: -3;
       margin-right: 0;
+      margin-left: -16px;
     }
 
     &:nth-child(6) {
-     margin-right: 0;
+      margin-right: 0;
+      margin-left: -16px;
     }
   }
 }
-
 
 .checkboxes__item label {
   position: relative;
