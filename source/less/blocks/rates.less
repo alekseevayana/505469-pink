@@ -198,6 +198,11 @@
 .rates__first-column {
   padding-left: 16px;
   text-align: left;
+  display: none;
+
+  @media (min-width: @tablet-size) {
+    display: table-cell;
+  }
 
   @media (min-width: @desktop-size) {
     padding-left: 23px;
