@@ -15,6 +15,7 @@
     "gulp-postcss": "7.0.x",
     "gulp-rename": "^1.2.2",
     "gulp-run-sequence": "^0.3.2",
+    "gulp-webp": "^3.0.0",
     "load-gulp-tasks": "^0.1.0",
     "stylelint": "9.2.x",
     "stylelint-config-htmlacademy": "0.1.x"
@@ -24,7 +25,7 @@
     "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
-    "start": "gulp serve"
+    "start": "npm run build && gulp serve"
   },
   "browserslist": [
     "last 2 versions",
@@ -43,6 +44,7 @@
     "node": "8.11"
   },
   "dependencies": {
+    "cwebp": "^2.0.2",
     "gulp-imagemin": "^4.1.0",
     "gulp-wait": "0.0.2",
     "normalize.css": "^8.0.0"

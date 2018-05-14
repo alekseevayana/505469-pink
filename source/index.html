@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <meta name="format-detection" content="telephone=no">
   <title>HTML Academy: Пинк</title>
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font">
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="css/style.min.css">
   <script>
     // Picture element HTML5 shiv
@@ -67,7 +72,11 @@
     <div class="page-main__container">
       <div class="caption caption--index-page">
         <picture>
-          <source media="(min-width: 1200px)"
+          <source type="image/webp" media="(min-width: 960px)" srcset="./img/iphone-hand-desktop@1x.webp 1x, ./img/iphone-hand-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 660px)"
+            srcset="./img/iphone-hand-tablet@1x.webp 1x, ./img/iphone-hand-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="./img/iphone-hand-mobile@1x.webp 1x, ./img/iphone-hand-mobile@2x.webp 2x">
+          <source media="(min-width: 960px)"
             srcset="./img/iphone-hand-desktop@1x.png 1x, ./img/iphone-hand-desktop@2x.png 2x">
           <source media="(min-width: 660px)"
             srcset="./img/iphone-hand-tablet@1x.png 1x, ./img/iphone-hand-tablet@2x.png 2x">
