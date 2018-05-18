@@ -7,13 +7,93 @@
   text-transform: uppercase;
 
   @media (min-width: @desktop-size) {
-    position: absolute;
     line-height: 18px;
     font-weight: normal;
     text-transform: none;
     background-color: hsla(0, 0%, 0%, 0.3);
     width: 100%;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
   }
+}
+
+.page-header__intro-container {
+  @media (min-width: @tablet-size) {
+    display: flex;
+    max-width: 660px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+  }
+
+  @media (min-width: @desktop-size) {
+    padding-bottom: 13px;
+    max-width: 960px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+  }
+}
+
+.page-header__title-wrapper {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.page-header__intro {
+  background-color: @base-color;
+
+  @media (min-width: @tablet-size) {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding-top: 61px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: @desktop-size) {
+    background-image: none;
+    background-color: transparent;
+  }
+}
+
+.page-header__downloading {
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: none;
+  font-weight: lighter;
+  @media (min-width: @tablet-size) {
+    padding-top: 89px;
+    z-index: 1;
+  }
+
+  @media (min-width: @desktop-size) {
+    padding-top: 109px;
+    padding-left: 0;
+    padding-right: 28px;
+    box-sizing: border-box;
+  }
+}
+
+.page-header__header {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .page-header__logo--atr {
@@ -115,6 +195,7 @@
   padding-top: 14px;
   padding-bottom: 24px;
   border-bottom: 1px solid black;
+  background-color: @base-color;
 
   @media (min-width: @tablet-size) {
     padding-bottom: 42px;
@@ -124,6 +205,7 @@
   @media (min-width: @desktop-size) {
     padding-top: 0;
     padding-bottom: 0;
+    background-color: transparent;
   }
 }
 

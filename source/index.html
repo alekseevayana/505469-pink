@@ -21,55 +21,55 @@
 </head>
 <body class="theme">
 <header class="page-header">
-  <div class="page-header__wrapper">
-    <div class="page-header__title">
-      <div class="container page-header__container">
-        <a class="page-header__logo page-header__logo--atr">
-          <svg class="page-header__logo-icon page-header__logo-icon--mobile" width="74" height="23">
-            <use xlink:href="./img/sprite.svg#logo-pink-white-mobile"></use>
-          </svg>
-          <svg class="page-header__logo-icon page-header__logo-icon--tablet" width="151" height="41">
-            <use xlink:href="./img/sprite.svg#logo-pink-white-tablet"></use>
-          </svg>
-          <svg class="page-header__logo-icon page-header__logo-icon--desktop" width="147" height="41">
-            <use xlink:href="./img/sprite.svg#logo-pink-white-desktop"></use>
-          </svg>
-        </a>
-        <a class="page-header__toggle visually-hidden" href="#" aria-label="Закрыть меню"><span
-          class="visually-hidden">Закрыть меню</span>
-          <svg width="23" height="24">
-            <use xlink:href="./img/sprite.svg#menu-cross"></use>
-          </svg>
-        </a>
-        <a class="page-header__toggle visually-hidden" href="#" aria-label="Открыть меню"><span
-          class="visually-hidden">Открыть меню</span>
-          <svg width="23" height="24">
-            <use xlink:href="./img/sprite.svg#menu-burger"></use>
-          </svg>
-        </a>
+  <div class="page-header__title-wrapper">
+    <div class="page-header__wrapper">
+      <div class="page-header__title">
+        <div class="container page-header__container">
+          <a class="page-header__logo page-header__logo--atr">
+            <svg class="page-header__logo-icon page-header__logo-icon--mobile" width="74" height="23">
+              <use xlink:href="./img/sprite.svg#logo-pink-white-mobile"></use>
+            </svg>
+            <svg class="page-header__logo-icon page-header__logo-icon--tablet" width="151" height="41">
+              <use xlink:href="./img/sprite.svg#logo-pink-white-tablet"></use>
+            </svg>
+            <svg class="page-header__logo-icon page-header__logo-icon--desktop" width="147" height="41">
+              <use xlink:href="./img/sprite.svg#logo-pink-white-desktop"></use>
+            </svg>
+          </a>
+          <a class="page-header__toggle visually-hidden" href="#" aria-label="Закрыть меню"><span
+            class="visually-hidden">Закрыть меню</span>
+            <svg width="23" height="24">
+              <use xlink:href="./img/sprite.svg#menu-cross"></use>
+            </svg>
+          </a>
+          <a class="page-header__toggle visually-hidden" href="#" aria-label="Открыть меню"><span
+            class="visually-hidden">Открыть меню</span>
+            <svg width="23" height="24">
+              <use xlink:href="./img/sprite.svg#menu-burger"></use>
+            </svg>
+          </a>
+        </div>
       </div>
+      <nav class="main-nav">
+        <ul class="main-nav__list list">
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__link list__link">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link list__link" href="./photo.html">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link list__link" href="./form.html">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link list__link" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <nav class="main-nav">
-      <ul class="main-nav__list list">
-        <li class="main-nav__item main-nav__item--active">
-          <a class="main-nav__link list__link">Главная</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link list__link" href="./photo.html">Фотографии</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link list__link" href="./form.html">Конкурс</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link list__link" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
-        </li>
-      </ul>
-    </nav>
   </div>
-</header>
-<main class="page-main">
-  <section class="page-main__header">
-    <div class="page-main__container">
+  <section class="page-header__intro">
+    <div class="page-header__intro-container">
       <div class="caption caption--index-page">
         <picture>
           <source type="image/webp" media="(min-width: 960px)"
@@ -86,7 +86,7 @@
         </picture>
         <h1 class="visually-hidden">Приложение "Пинк"</h1>
       </div>
-      <div class="downloading page-main__downloading">
+      <div class="downloading page-header__downloading">
         <p class="downloading__slogan">Взгляните
           на&#160;жизнь
           иначе!</p>
@@ -119,6 +119,8 @@
       </div>
     </div>
   </section>
+</header>
+<main class="page-main">
   <section class="slogan container page-main__slogan">
     <p class="slogan__text slogan__text--light slogan__text-first">Устали от серости мегаполиса?</p>
     <p class="slogan__text slogan__text--light">Нам есть, что вам<br>
