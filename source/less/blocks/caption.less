@@ -19,11 +19,11 @@
   @media (min-width: @tablet-size) {
     padding-top: 70px;
     padding-bottom: 80px;
-    background-position: center -179px;
-    background-image: none;
+    background-position: center center;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: none;
+      background-image: url("../img/bg-back-tablet@2x.jpg");
     }
   }
 
@@ -47,6 +47,42 @@
     margin: 0 auto;
     background-image: none;
     position: static;
+  }
+}
+
+.caption--form-main {
+  padding-bottom: 51px;
+
+  @media (min-width: @tablet-size) {
+    padding-bottom: 78px;
+    padding-top: 71px;
+    text-transform: none;
+  }
+
+  @media (min-width: @desktop-size) {
+    padding-top: 61px;
+    padding-bottom: 101px;
+  }
+}
+
+.caption--photo-main {
+  padding-bottom: 82px;
+
+  @media (min-width: @tablet-size) {
+    padding-bottom: 139px;
+    padding-top: 68px;
+    margin-bottom: 0;
+    text-transform: none;
+  }
+
+  @media (min-width: @desktop-size) {
+    padding-bottom: 101px;
+    padding-top: 64px;
+    margin-bottom: 0;
+
+    & h1 {
+      width: 380px;
+    }
   }
 }
 
