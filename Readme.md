@@ -1,7 +1,11 @@
+# Personal Project Pink
+
+Project was created to practise with HTML, CSS, Gulp, and Less
+
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Iana Alekseeva](https://up.htmlacademy.ru/adaptive/14/user/505469).
-* Наставник: [Dmitry Bezugly](https://up.htmlacademy.ru/adaptive/14/user/123364).
+- Студент: [Iana Alekseeva](https://up.htmlacademy.ru/adaptive/14/user/505469).
+- Наставник: [Dmitry Bezugly](https://up.htmlacademy.ru/adaptive/14/user/123364).
 
 ---
 
@@ -58,6 +62,3 @@ git clone SSH-адрес_вашего_форка
 [travis-url]: https://travis-ci.org/htmlacademy-adaptive/505469-pink
 [dependency-image]: https://david-dm.org/htmlacademy-adaptive/505469-pink/dev-status.svg?style=flat-square
 [dependency-url]: https://david-dm.org/htmlacademy-adaptive/505469-pink?type=dev
-
-
-
